@@ -78,6 +78,13 @@
                 <span class="nav-link-text">Profile</span>
               </a>
             </li> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/profile.html">
+                <i class="ni ni-single-02 text-yellow"></i>
+                <span class="nav-link-text">Data Kependudukan</span>
+              </a>
+            </li>
 
             <!-- <li class="nav-item">
               <a class="nav-link" href="examples/login.html">
@@ -156,7 +163,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">Admin<</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -175,7 +182,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">Admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -374,11 +381,12 @@
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col" class="sort" data-sort="name">Project</th>
-                    <th scope="col" class="sort" data-sort="budget">Budget</th>
-                    <th scope="col" class="sort" data-sort="status">Status</th>
-                    <th scope="col">Users</th>
-                    <th scope="col" class="sort" data-sort="completion">Completion</th>
+                    <th scope="col" class="sort" data-sort="name">Nama</th>
+                    <th scope="col" class="sort" data-sort="budget">Tempat Lahir</th>
+                    <th scope="col" class="sort" data-sort="status">Tanggal Lahir</th>
+                    <th scope="col" class="sort" data-sort="completion">Agama</th>
+                    <th scope="col" class="sort" data-sort="pekerjaan">Pekerjaan</th>
+                    <th scope="col" class="sort" data-sort="alamat">Alamat</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
@@ -710,7 +718,7 @@
           </div>
         </div>
       </div>
-      <!-- Dark table -->
+      <!-- Dark table
       <div class="row">
         <div class="col">
           <div class="card bg-default shadow">
@@ -1030,19 +1038,19 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2020 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+              &copy; 2021 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Proyek 2</a>
             </div>
           </div>
           <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Proyek 2</a>
               </li>
               <li class="nav-item">
                 <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>

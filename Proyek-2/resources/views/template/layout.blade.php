@@ -13,6 +13,7 @@
 =========================================================
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
+
 <!DOCTYPE html>
 <html>
 
@@ -62,9 +63,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/map.html">
+              <a class="nav-link" href="/sku">
                 <i class="ni ni-pin-3 text-primary"></i>
-                <span class="nav-link-text">Surat Masuk SKU</span>
+                <span class="nav-link-text" >Surat Masuk SKU</span>
               </a>
             </li>
             <li class="nav-item">
@@ -72,13 +73,13 @@
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Surat Masuk SKTM</span>
               </a>
-            <!-- </li>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="examples/profile.html">
                 <i class="ni ni-single-02 text-yellow"></i>
-                <span class="nav-link-text">Profile</span>
+                <span class="nav-link-text">Data Kependudukan</span>
               </a>
-            </li> -->
+            </li>
 
             <!-- <li class="nav-item">
               <a class="nav-link" href="examples/login.html">
@@ -93,7 +94,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/upgrade.html">
+              <a class="nav-link" href="/logout">
                 <i class="ni ni-send text-dark"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
