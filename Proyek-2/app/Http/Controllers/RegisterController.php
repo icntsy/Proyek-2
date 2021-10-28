@@ -19,7 +19,7 @@ class RegisterController extends Controller
         $request->email;
         $request->password;
 
-        User::create([ 
+        User::create([
             'nama' =>$request->nama,
             'email'=>$request->email,
             'password'=>$request->password,

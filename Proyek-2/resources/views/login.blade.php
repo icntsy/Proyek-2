@@ -71,7 +71,7 @@
                             <button id="form_submit" type="submit">Submit <i class="ti-arrow-right"></i></button>
                         </div>
                         <div class="form-footer text-center mt-5">
-                            <p class="text-muted">Don't have an account? <a href="/register">Daftar</a></p>
+                            <p class="text-muted">Belum Punya Akun? <a href="/register">Daftar</a></p>
                         </div>
                     </div>
                 </form>
