@@ -37,6 +37,11 @@
     <div class="login-area login-s2">
         <div class="container">
             <div class="login-box ptb--100">
+                @if(session("session"))
+                <div class="alert">
+                    {{ session("session") }}
+                </div>
+                @endif
                 <form action="/login_cek" method="post">
                     <div class="login-form-head">
                         <h4>Login</h4>

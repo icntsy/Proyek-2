@@ -22,7 +22,7 @@ class RegisterController extends Controller
         User::create([
             'nama' =>$request->nama,
             'email'=>$request->email,
-            'password'=>$request->password,
+            'password'=> bcrypt($request->password),
         ]);
 
         return redirect("/login");

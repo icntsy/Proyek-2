@@ -32,15 +32,15 @@ Route::get("/dashboard", function() {
 Route::get("/home", [AdminController::class, "index"]);
 Route::get("/app", [AppController::class, "app"] );
 
-Route::get("/template", function() {
-    if(!Session::get('email')) {
-        return redirect("/login");
-    } else {
+
+Route::group(["middleware" => "admin"], function () {
+    Route::get("/template", function() {
         return view("/template/layout");
-    }
+    });
 });
 
-Route::get("/login", [LoginController::class, "index"]);
+
+Route::get("/login", [LoginController::class, "index"])->middleware("guest");
 
 Route::get("/register", [RegisterController::class, "index"]);
 
@@ -48,6 +48,8 @@ Route::post("/register_cek", [RegisterController::class, "cek"]);
 
 Route::get("/sku", [SkuController::class, "index"]);
 
+Route::get("/sktm", [SktmController::class, "index"]);
+
 Route::post("/login_cek", [LoginController::class, "cek"]);
 
-Route::get("/logout", [LogoutController::class, "index"]);
+Route::get("/logout", [LogoutController::class, "index"])->middleware("admin");

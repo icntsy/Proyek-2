@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -14,24 +15,18 @@ class LoginController extends Controller
     }
     public function cek(Request $request)
     {
-        $request->email;
-        $request->password;
+        $credentials = [
+            "email" => $request->email,
+            "password" => $request->password
+        ];
 
-        $login = User::where([
-            'email'=>$request->email,
-            'password'=>$request->password,
-        ])->first();
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
 
-        if ($login) {
-
-            Session::put('email', $login->email);
-            Session::put('password', $login->password);
-
-            return redirect("/template");
-
-        } else {
-            return redirect()->back();
+            return redirect()->intended("/template");
         }
+
+        return redirect()->back()->with("session", "Gagal Login");
 
     }
 }
