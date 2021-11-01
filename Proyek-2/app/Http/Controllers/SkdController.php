@@ -14,7 +14,11 @@ class SkdController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            "data_skd" => Skd::all()
+        ];
+
+        return view("/skd", $data);
     }
 
     /**
