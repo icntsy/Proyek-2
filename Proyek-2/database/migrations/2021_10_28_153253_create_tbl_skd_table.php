@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSktmTable extends Migration
+class CreateTblSkdTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CreateSktmTable extends Migration
      */
     public function up()
     {
-        Schema::create('sktm', function (Blueprint $table) {
+        Schema::create('tbl_skd', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
             $table->string('tempat_lahir');
             $table->string('tanggal_lahir');
             $table->string('jenis_kelamin');
-            $table->integer('nik');
-            $table->string('kewarganegaraan');
             $table->string('agama');
-            $table->string('status_perkawinan');
             $table->string('pekerjaan');
             $table->string('alamat');
             $table->timestamps();
@@ -36,6 +33,6 @@ class CreateSktmTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sktm');
+        Schema::dropIfExists('tbl_skd');
     }
 }

@@ -3,12 +3,15 @@ use Illuminate\Auth\Events\Login;
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SkuController;
+use App\Http\Controllers\SktmController;
+use App\Http\Controllers\SkdController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +56,5 @@ Route::get("/sktm", [SktmController::class, "index"]);
 Route::post("/login_cek", [LoginController::class, "cek"]);
 
 Route::get("/logout", [LogoutController::class, "index"])->middleware("admin");
+
+Route::get("/landing", [LandingController::class, "index"]);

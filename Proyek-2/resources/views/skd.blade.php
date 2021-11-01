@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Surat Masuk SKTM</title>
+  <title>Surat Masuk SKD</title>
   <!-- Favicon -->
   <link rel="icon" href="/admin/assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -49,7 +49,7 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="/template">
+              <a class="nav-link active" href="examples/dashboard.html">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
@@ -61,13 +61,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sku">
+              <a class="nav-link" href="examples/map.html">
                 <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKU</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sktm">
+              <a class="nav-link" href="examples/tables.html">
                 <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKTM</span>
               </a>
@@ -374,23 +374,18 @@
           <div class="card">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">Surat Keterangan Tidak Mampu</h3>
+              <h3 class="mb-0">Surat Keterangan Usaha</h3>
             </div>
             <!-- Light table -->
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-
                     <th scope="col" class="sort" data-sort="name">Nama</th>
                     <th scope="col" class="sort" data-sort="budget">Tempat Lahir</th>
                     <th scope="col" class="sort" data-sort="status">Tanggal Lahir</th>
-                    <th scope="col" class="sort" data-sort="completion">Jenis Kelamin</th>
-                    <th scope="col" class="sort" data-sort="pekerjaan">Nik</th>
-                    <th scope="col" class="sort" data-sort="alamat">Kewarganegaraan</th>
-                    <th scope="col" class="sort" data-sort="alamat">Agama</th>
-                    <th scope="col" class="sort" data-sort="alamat">status Perkawinan</th>
-                    <th scope="col" class="sort" data-sort="alamat">Pekerjaan</th>
+                    <th scope="col" class="sort" data-sort="completion">Agama</th>
+                    <th scope="col" class="sort" data-sort="pekerjaan">Pekerjaan</th>
                     <th scope="col" class="sort" data-sort="alamat">Alamat</th>
                     <th scope="col"></th>
                   </tr>

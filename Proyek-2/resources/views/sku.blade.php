@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>Surat Masuk SKU</title>
   <!-- Favicon -->
   <link rel="icon" href="/admin/assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -49,26 +49,26 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="examples/dashboard.html">
+              <a class="nav-link active" href="/template">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="examples/icons.html">
-                <i class="ni ni-planet text-orange"></i>
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKD</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/map.html">
-                <i class="ni ni-pin-3 text-primary"></i>
+              <a class="nav-link" href="/sku">
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKU</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/tables.html">
-                <i class="ni ni-bullet-list-67 text-default"></i>
+              <a class="nav-link" href="/sktm">
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKTM</span>
               </a>
             <!-- </li>
@@ -99,7 +99,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/upgrade.html">
+              <a class="nav-link" href="/logout">
                 <i class="ni ni-send text-dark"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
@@ -201,7 +201,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">Admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>5 hrs ago</small>
@@ -220,7 +220,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">Admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -239,7 +239,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">Admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -308,7 +308,7 @@
                     <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Admin</span>
                   </div>
                 </div>
               </a>
@@ -374,7 +374,7 @@
           <div class="card">
             <!-- Card header -->
             <div class="card-header border-0">
-              <h3 class="mb-0">Light table</h3>
+              <h3 class="mb-0">Surat Keterangan Usaha</h3>
             </div>
             <!-- Light table -->
             <div class="table-responsive">
@@ -394,25 +394,25 @@
                   <tr>
                     <th scope="row">
                       <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="/admin/assets/img/theme/bootstrap.jpg">
-                        </a>
+                        <a href="#"></a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm">Argon Design System</span>
+                          <span class="name mb-0 text-sm">Michael</span>
                         </div>
                       </div>
                     </th>
                     <td class="budget">
-                      $2500 USD
+                      Cirebon
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
-                        <i class="bg-warning"></i>
-                        <span class="status">pending</span>
+                        <span class="status">09-12-2000</span>
                       </span>
                     </td>
                     <td>
-                      <div class="avatar-group">
+                    <div class="media-body">
+                          <span class="name mb-0 text-sm">Kristen</span>
+                        </div>
+                      <!-- <div class="avatar-group">
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-1.jpg">
                         </a>
@@ -425,20 +425,20 @@
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg">
                         </a>
-                      </div>
+                      </div> -->
                     </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <span class="completion mr-2">60%</span>
+                        <span class="completion mr-2">Pelajar/Belum Bekerja</span>
                         <div>
-                          <div class="progress">
+                          <!-- <div class="progress">
                             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
-                      <div class="dropdown">
+                      <!-- <div class="dropdown">
                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
@@ -446,32 +446,36 @@
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
                           <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        </div> -->
+                        <div class="d-flex align-items-center">
+                        <span class="completion mr-2">Jl.MT. Haryono</span>
+                        <div>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">
                       <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="/admin/assets/img/theme/angular.jpg">
-                        </a>
+                        <a href="#"></a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm">Angular Now UI Kit PRO</span>
+                          <span class="name mb-0 text-sm">Arya Dharma</span>
                         </div>
                       </div>
                     </th>
                     <td class="budget">
-                      $1800 USD
+                      Bali
                     </td>
                     <td>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>
-                        <span class="status">completed</span>
-                      </span>
+                      <!-- <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i> -->
+                        <span class="status">06-11-1997</span>
+                      <!-- </span> -->
                     </td>
                     <td>
-                      <div class="avatar-group">
+                    <div class="media-body">
+                          <span class="name mb-0 text-sm">Budha</span>
+                        </div>
+                      <!-- <div class="avatar-group">
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-1.jpg">
                         </a>
@@ -484,20 +488,20 @@
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg">
                         </a>
-                      </div>
+                      </div> -->
                     </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <span class="completion mr-2">100%</span>
+                        <span class="completion mr-2">Wiraswasta</span>
                         <div>
-                          <div class="progress">
+                          <!-- <div class="progress">
                             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </td>
                     <td class="text-right">
-                      <div class="dropdown">
+                      <!-- <div class="dropdown">
                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
@@ -505,32 +509,34 @@
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        <div class="d-flex align-items-center">
+                        <span class="completion mr-2">Jl.Manunggal Rt.12</span>
                         </div>
-                      </div>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">
                       <div class="media align-items-center">
-                        <a href="#" class="avatar rounded-circle mr-3">
-                          <img alt="Image placeholder" src="/admin/assets/img/theme/sketch.jpg">
-                        </a>
+                        <a href="#"></a>
                         <div class="media-body">
-                          <span class="name mb-0 text-sm">Black Dashboard</span>
+                          <span class="name mb-0 text-sm">Wardi</span>
                         </div>
                       </div>
                     </th>
                     <td class="budget">
-                      $3150 USD
+                      Indramayu
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i>
-                        <span class="status">delayed</span>
+                        <span class="status">05-09-1998</span>
                       </span>
                     </td>
                     <td>
-                      <div class="avatar-group">
+                    <div class="media-body">
+                          <span class="name mb-0 text-sm">Islam</span>
+                        </div>
+                      <!-- <div class="avatar-group">
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-1.jpg">
                         </a>
@@ -543,20 +549,20 @@
                         <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg">
                         </a>
-                      </div>
+                      </div> -->
                     </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <span class="completion mr-2">72%</span>
-                        <div>
+                        <span class="completion mr-2">Pegawai Swasta</span>
+                        <!-- <div>
                           <div class="progress">
                             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
                           </div>
                         </div>
                       </div>
-                    </td>
+                    </td> -->
                     <td class="text-right">
-                      <div class="dropdown">
+                      <!-- <div class="dropdown">
                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
@@ -564,12 +570,15 @@
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        <div class="d-flex align-items-center">
+                        <span class="completion mr-2">Jl. Pangeran Antasari</span>
                         </div>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">
+                    <!-- <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/react.jpg">
@@ -627,8 +636,8 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                    <th scope="row">
+                  <tr> -->
+                    <!-- <th scope="row">
                       <div class="media align-items-center">
                         <a href="#" class="avatar rounded-circle mr-3">
                           <img alt="Image placeholder" src="/admin/assets/img/theme/vue.jpg">
@@ -684,7 +693,7 @@
                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
-                    </td>
+                    </td> -->
                   </tr>
                 </tbody>
               </table>
@@ -1047,7 +1056,7 @@
               &copy; 2021 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Proyek 2</a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
                 <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Proyek 2</a>
@@ -1060,7 +1069,7 @@
               </li>
               <li class="nav-item">
                 <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

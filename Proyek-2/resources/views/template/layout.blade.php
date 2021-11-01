@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon</title>
+  <title>Sisdayu</title>
   <!-- Favicon -->
   <link rel="icon" href="/admin/assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -58,19 +58,20 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="examples/icons.html">
-                <i class="ni ni-planet text-orange"></i>
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKD</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/sku">
-                <i class="ni ni-pin-3 text-primary"></i>
+
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text" >Surat Masuk SKU</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/sktm">
-                <i class="ni ni-bullet-list-67 text-default"></i>
+                <i class="fas fa-mail-bulk"></i>
                 <span class="nav-link-text">Surat Masuk SKTM</span>
               </a>
             </li>
