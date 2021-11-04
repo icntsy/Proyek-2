@@ -28,9 +28,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/dashboard", function() {
-    return view("halaman");
-});
+Route::get("/dashboard", [AppController::class, "dashboard"] );
 
 Route::get("/home", [AdminController::class, "index"]);
 Route::get("/app", [AppController::class, "app"] );
@@ -51,7 +49,21 @@ Route::post("/register_cek", [RegisterController::class, "cek"]);
 
 Route::get("/sku", [SkuController::class, "index"]);
 
+//Route::resources("skd", [SkdController]);
+
+Route::get("/skd", [SkdController::class, "index"]);
+Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
+
+Route::get("/sku", [SkuController::class, "index"]);
+Route::get("/sku/{id}/hapus", [SkuController::class, "destroy"]);
+
 Route::get("/sktm", [SktmController::class, "index"]);
+
+Route::get("/sktm", [SktmController::class, "index"]);
+Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
+
+// Route::get("/data_penduduk", [Data_pendudukController::class, "index"]);
+// Route::get("/data_penduduk/{id}/hapus", [Data_pendudukController::class, "destroy"]);
 
 Route::post("/login_cek", [LoginController::class, "cek"]);
 

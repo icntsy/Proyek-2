@@ -84,6 +84,8 @@ class SkuController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Sku::where("id", $id)->delete();
+
+        return redirect()->back();
     }
 }

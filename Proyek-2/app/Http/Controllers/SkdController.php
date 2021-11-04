@@ -84,6 +84,8 @@ class SkdController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Skd::where("id", $id)->delete();
+
+        return redirect()->back();
     }
 }

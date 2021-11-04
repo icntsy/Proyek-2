@@ -84,6 +84,8 @@ class SktmController extends Controller
      */
     public function destroy($id)
     {
-        //
+       Sktm::where("id", $id)->delete();
+
+        return redirect()->back();
     }
 }
