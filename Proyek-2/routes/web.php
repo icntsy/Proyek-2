@@ -12,6 +12,7 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\PendudukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,8 +63,8 @@ Route::get("/sktm", [SktmController::class, "index"]);
 Route::get("/sktm", [SktmController::class, "index"]);
 Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
 
-// Route::get("/data_penduduk", [Data_pendudukController::class, "index"]);
-// Route::get("/data_penduduk/{id}/hapus", [Data_pendudukController::class, "destroy"]);
+Route::get("/penduduk", [PendudukController::class, "index"]);
+Route::get("/penduduk/{id}/hapus", [PendudukController::class, "destroy"]);
 
 Route::post("/login_cek", [LoginController::class, "cek"]);
 

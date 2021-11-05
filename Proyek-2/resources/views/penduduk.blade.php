@@ -1,6 +1,6 @@
 @extends("template.layout")
 
-@section("page_title", "DATA SKTM")
+@section("page_title", "DATA PENDUDUK")
 
 @section("page_content")
 
@@ -15,7 +15,7 @@
 
           @if(auth()->user()->role == 1)
 
-          Surat Keterangan Tidak Mampu
+          Data Kependudukan
 
           @else
 
@@ -32,14 +32,10 @@
               <th scope="col" class="sort" data-sort="name">No.</th>
               <th scope="col" class="sort" data-sort="status">Nama</th>
               <th scope="col" class="sort" data-sort="budget">NIK</th>
-              <th scope="col" class="sort" data-sort="status">Tempat Lahir</th>
-              <th scope="col" class="sort" data-sort="budget">Tanggal Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
               <th scope="col" class="sort" data-sort="budget">Kewarganegaraan</th>
               <th scope="col" class="sort" data-sort="budget">Agama</th>
               <th scope="col" class="sort" data-sort="budget">Alamat</th>
-              <th scope="col" class="sort" data-sort="budget">Pekerjaan</th>
-              <th scope="col" class="sort" data-sort="budget">Status Kawin</th>
               <th scope="col">Aksi</th>
               <th scope="col"></th>
             </tr>
@@ -47,29 +43,23 @@
           <tbody class="list">
             @php $no = 0 @endphp
 
-            @foreach($data_sktm as $sktm)
+            @foreach($data_penduduk as $pdd)
             <tr>
               <td>{{ ++$no }}</td>
-              <td>{{ $sktm->nama }}</td>
-              <td>{{ $sktm->nik }}</td>
-              <td>{{ $sktm->tempat_lahir }}</td>
-              <td>{{ $sktm->tanggal_lahir }}</td>
-              <td>{{ $sktm->jenis_kelamin }}</td>
-              <td>{{ $sktm->kewarganegaraan }}</td>
-              <td>{{ $sktm->agama }}</td>
-              <td>{{ $sktm->alamat }}</td>
-              <td>{{ $sktm->pekerjaan }}</td>
-              <td>{{ $sktm->status_kawin }}</td>
+              <td>{{ $pdd->nama }}</td>
+              <td>{{ $pdd->nik }}</td>
+              <td>{{ $pdd->jenis_kelamin }}</td>
+              <td>{{ $pdd->kewarganegaraan }}</td>
+              <td>{{ $pdd->agama }}</td>
+              <td>{{ $pdd->alamat }}</td>
               <td>
                 <a href="" class="btn btn-warning btn-sm">
                   Edit
                 </a>
-                <a href="" class="btn btn-danger  btn-sm">
-                  Print
-                </a>
-                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sktm/{{ $sktm->id }}/hapus" class="btn btn-warning btn-sm">
+                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/penduduk/{{ $pdd->id }}/hapus" class="btn btn-danger btn-sm">
                   Hapus
                 </a>
+
               </td>
             </tr>
             @endforeach

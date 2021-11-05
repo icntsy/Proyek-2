@@ -9,7 +9,7 @@
     <div class="card">
       <!-- Card header -->
       <div class="card-header border-0">
-        <h3 class="mb-0"> 
+        <h3 class="mb-0">
         @if(auth()->user()->role == 1)
 
           Surat Keterangan Usaha
@@ -55,7 +55,10 @@
                 <a href="" class="btn btn-warning btn-sm">
                   Edit
                 </a>
-                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-danger btn-sm">
+                <a href="" class="btn btn-danger btn-sm">
+                  Print
+                </a>
+                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-warning btn-sm">
                   Hapus
                 </a>
               </td>

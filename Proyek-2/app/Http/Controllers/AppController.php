@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\skd;
 use App\Models\sku;
 use App\Models\sktm;
-// use App\Models\data_penduduk;
+use App\Models\penduduk;
 
 class AppController extends Controller
 {
@@ -21,8 +21,8 @@ class AppController extends Controller
             "data_skd" => skd::count(),
             "data_sku" => sku::count(),
             "data_sktm" => sktm::count(),
-            // "data_data_penduduk" => data_penduduk::count()
-  
+            "data_penduduk" => penduduk::count()
+
         ];
 
         return view("dashboard", $data);
