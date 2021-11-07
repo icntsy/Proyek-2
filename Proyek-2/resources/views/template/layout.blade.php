@@ -36,27 +36,27 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="/dashboard">
-                <i class="ni ni-tv-2 text-primary"></i>
+              <a class="nav-link" href="/dashboard">
+                <i class="fas fa-home"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/skd">
-                <i class="fas fa-mail-bulk"></i>
+                <i class="ni ni-email-83"></i>
                 <span class="nav-link-text">Surat Masuk SKD</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/sku">
 
-                <i class="fas fa-mail-bulk"></i>
+                <i class="ni ni-email-83"></i>
                 <span class="nav-link-text" >Surat Masuk SKU</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/sktm">
-                <i class="fas fa-mail-bulk"></i>
+                <i class="ni ni-email-83"></i>
                 <span class="nav-link-text">Surat Masuk SKTM</span>
               </a>
             </li>
@@ -81,7 +81,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/logout">
-                <i class="ni ni-send text-dark"></i>
+                <i class="ni ni-button-power"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
             </li>
@@ -126,20 +126,20 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="ni ni-bell-55"></i>
+                      <!-- <i class="ni ni-bell-55"></i> -->
                     </a>
                     <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
                       <!-- Dropdown header -->
-                      <div class="px-3 py-3">
+                      <!-- <div class="px-3 py-3">
                         <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong> notifications.</h6>
-                      </div>
+                      </div> -->
                       <!-- List group -->
-                      <div class="list-group list-group-flush">
+                      <!-- <div class="list-group list-group-flush">
                         <a href="#!" class="list-group-item list-group-item-action">
                           <div class="row align-items-center">
-                            <div class="col-auto">
+                            <div class="col-auto"> -->
                               <!-- Avatar -->
-                              <img alt="Image placeholder" src="/admin/assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                              <!-- <img alt="Image placeholder" src="/admin/assets/img/theme/team-1.jpg" class="avatar rounded-circle">
                             </div>
                             <div class="col ml--2">
                               <div class="d-flex justify-content-between align-items-center">
@@ -156,9 +156,9 @@
                         </a>
                         <a href="#!" class="list-group-item list-group-item-action">
                           <div class="row align-items-center">
-                            <div class="col-auto">
+                            <div class="col-auto"> -->
                               <!-- Avatar -->
-                              <img alt="Image placeholder" src="/admin/assets/img/theme/team-2.jpg" class="avatar rounded-circle">
+                              <!-- <img alt="Image placeholder" src="/admin/assets/img/theme/team-2.jpg" class="avatar rounded-circle">
                             </div>
                             <div class="col ml--2">
                               <div class="d-flex justify-content-between align-items-center">
@@ -175,9 +175,9 @@
                         </a>
                         <a href="#!" class="list-group-item list-group-item-action">
                           <div class="row align-items-center">
-                            <div class="col-auto">
+                            <div class="col-auto"> -->
                               <!-- Avatar -->
-                              <img alt="Image placeholder" src="/admin/assets/img/theme/team-3.jpg" class="avatar rounded-circle">
+                              <!-- <img alt="Image placeholder" src="/admin/assets/img/theme/team-3.jpg" class="avatar rounded-circle">
                             </div>
                             <div class="col ml--2">
                               <div class="d-flex justify-content-between align-items-center">
@@ -194,9 +194,9 @@
                         </a>
                         <a href="#!" class="list-group-item list-group-item-action">
                           <div class="row align-items-center">
-                            <div class="col-auto">
+                            <div class="col-auto"> -->
                               <!-- Avatar -->
-                              <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg" class="avatar rounded-circle">
+                              <!-- <img alt="Image placeholder" src="/admin/assets/img/theme/team-4.jpg" class="avatar rounded-circle">
                             </div>
                             <div class="col ml--2">
                               <div class="d-flex justify-content-between align-items-center">
@@ -213,9 +213,9 @@
                         </a>
                         <a href="#!" class="list-group-item list-group-item-action">
                           <div class="row align-items-center">
-                            <div class="col-auto">
+                            <div class="col-auto"> -->
                               <!-- Avatar -->
-                              <img alt="Image placeholder" src="/admin/assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                              <!-- <img alt="Image placeholder" src="/admin/assets/img/theme/team-5.jpg" class="avatar rounded-circle">
                             </div>
                             <div class="col ml--2">
                               <div class="d-flex justify-content-between align-items-center">
@@ -230,16 +230,16 @@
                             </div>
                           </div>
                         </a>
-                      </div>
+                      </div> -->
                       <!-- View all -->
-                      <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
-                    </div>
+                      <!-- <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                    </div> -->
                   </li>
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="ni ni-ungroup"></i>
+                      <i class="ni ni-ungroup"></i> -->
                     </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
+                    <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
                       <div class="row shortcuts px-4">
                         <a href="#!" class="col-4 shortcut-item">
                           <span class="shortcut-media avatar rounded-circle bg-gradient-red">
@@ -280,7 +280,7 @@
                       </div>
                     </div>
                   </li>
-                </ul>
+                </ul> -->
                 <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
                   <li class="nav-item dropdown">
                     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -298,8 +298,8 @@
                         <h6 class="text-overflow m-0">Welcome!</h6>
                       </div>
                       <div class="dropdown-divider"></div>
-                      <a href="#!" class="dropdown-item">
-                        <i class="ni ni-user-run"></i>
+                      <a href="/logout" class="dropdown-item">
+                        <i class="ni ni-button-power"></i>
                         <span>Logout</span>
                       </a>
                     </div>
@@ -318,15 +318,15 @@
                     <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
                     <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                       <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                        <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Default</li>
+                        <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Default</li> -->
                       </ol>
                     </nav>
                   </div>
                   <div class="col-lg-6 col-5 text-right">
-                    <a href="#" class="btn btn-sm btn-neutral">New</a>
-                    <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a>
+                    <!-- <a href="#" class="btn btn-sm btn-neutral">Filters</a> -->
                   </div>
                 </div>
                 <!-- Card stats -->
@@ -349,23 +349,23 @@
               <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6">
                   <div class="copyright text-center  text-lg-left  text-muted">
-                    &copy; 2021 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Proyek 2</a>
+                    &copy; 2021 <a href="" class="font-weight-bold ml-1" >Proyek 2</a>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                     <li class="nav-item">
-                      <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Proyek 2</a>
+                      <a href="" class="nav-link" >Proyek 2</a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                      <a href="" class="nav-link" >Kelompok 2</a>
                     </li>
                     <li class="nav-item">
-                      <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                      <a href="" class="nav-link" >Sisdayu</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
