@@ -64,7 +64,7 @@
                 <a href="" class="btn btn-warning btn-sm">
                   Edit
                 </a>
-                <a href="" class="btn btn-danger  btn-sm">
+                <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/sktm.pdf?id={{$sktm->id}}" class="btn btn-danger btn-sm" target="_blank">
                   Print
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sktm/{{ $sktm->id }}/hapus" class="btn btn-warning btn-sm">

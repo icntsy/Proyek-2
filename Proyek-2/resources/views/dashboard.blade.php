@@ -76,7 +76,7 @@
         <div class="row">
           <div class="col">
             <h5 class="card-title text-uppercase text-muted mb-0">Data Penduduk</h5>
-            <span class="h2 font-weight-bold mb-0"> </span>
+            <span class="h2 font-weight-bold mb-0">{{ $data_penduduk }} </span>
           </div>
           <div class="col-auto">
             <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
