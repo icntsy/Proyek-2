@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PendudukController;
 use App\Http\Controllers\Edit_ProfilController;
+use App\Http\Controllers\akunController;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,4 +74,9 @@ Route::get("/logout", [LogoutController::class, "index"])->middleware("admin");
 
 Route::get("/landing", [LandingController::class, "index"]);
 
-Route::get("/editprofil", [Edit_ProfilController::class, "index"]);
+Route::get("/akun", [akunController::class, "index"]);
+Route::get("/akun/{id}/hapus", [akunController::class, "destroy"]);
+
+Route::get("/editprofil/{id}", [Edit_ProfilController::class, "index"]);
+
+Route::get("/editsurat", [editsuratController::class, "index"]);

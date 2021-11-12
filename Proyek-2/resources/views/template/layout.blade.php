@@ -69,7 +69,7 @@
 
 
             <li class="nav-item">
-              <a class="nav-link" href="examples/register.html">
+              <a class="nav-link" href="/akun">
                 <i class="ni ni-circle-08 text-pink"></i>
                 <span class="nav-link-text">Akun</span>
               </a>

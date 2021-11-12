@@ -3,17 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\akun;
 
-class editsuratController extends Controller
+class akunController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        //
+        $data = [
+            "data_akun" => akun::all()
+        ];
+
+        return view("/akun", $data);
     }
 
     /**
@@ -79,6 +85,8 @@ class editsuratController extends Controller
      */
     public function destroy($id)
     {
-        //
+       akun::where("id", $id)->delete();
+
+        return redirect()->back();
     }
 }

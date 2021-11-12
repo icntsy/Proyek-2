@@ -69,7 +69,7 @@
 
 
             <li class="nav-item">
-              <a class="nav-link" href="examples/register.html">
+              <a class="nav-link" href="/akun">
                 <i class="ni ni-circle-08 text-pink"></i>
                 <span class="nav-link-text">Akun</span>
               </a>
@@ -204,13 +204,13 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">Full Name</label>
-                        <input type="text" id="input-username" class="form-control" placeholder="Username" value="Isi Nama Lengkap Anda Disini">
+                        <input type="text" id="input-username" class="form-control" placeholder="Full name" value="{{ $user->nama }}">
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email address</label>
-                        <input type="email" id="input-email" class="form-control" placeholder="Isi Email Anda Disini">
+                        <input type="email" id="input-email" class="form-control" placeholder="Email Address" value="{{ $user->email }}">
                       </div>
                     </div>
                   </div>
@@ -218,13 +218,13 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-first-name">Password</label>
-                        <input type="text" id="input-first-name" class="form-control" placeholder="Password" value="Isi Password Anda">
+                        <input type="text" id="input-first-name" class="form-control" placeholder="Password">
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Confirm Password</label>
-                        <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="Jesse"> <br>
+                        <input type="text" id="input-last-name" class="form-control" placeholder="Confirm Password"> <br>
                         @csrf
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>

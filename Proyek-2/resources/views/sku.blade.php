@@ -53,7 +53,7 @@
               <td>{{ $sku->pekerjaan }}</td>
               <td>{{ $sku->alamat }}</td>
               <td>
-                <a href="" class="btn btn-warning btn-sm">
+                <a href="/editsurat" class="btn btn-warning btn-sm">
                   Edit
                 </a>
                 <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/Sku.pdf?id={{$sku->id}}" class="btn btn-danger btn-sm" target="_blank">

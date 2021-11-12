@@ -22,6 +22,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
+            Session::put('email', $request->email);
 
             return redirect()->intended("/template");
         }
