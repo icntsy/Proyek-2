@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PendudukController;
+use App\Http\Controllers\Edit_ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +72,5 @@ Route::post("/login_cek", [LoginController::class, "cek"]);
 Route::get("/logout", [LogoutController::class, "index"])->middleware("admin");
 
 Route::get("/landing", [LandingController::class, "index"]);
+
+Route::get("/editprofil", [Edit_ProfilController::class, "index"]);
