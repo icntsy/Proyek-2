@@ -54,10 +54,10 @@
               <td>{{ $pdd->alamat }}</td>
               <td>
                 <a href="" class="btn btn-warning btn-sm">
-                  Edit
+                <i class="fas fa-edit"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/penduduk/{{ $pdd->id }}/hapus" class="btn btn-danger btn-sm">
-                  Hapus
+                <i class="fas fa-trash"></i>
                 </a>
 
               </td>

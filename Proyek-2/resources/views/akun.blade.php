@@ -41,10 +41,10 @@
               <td>{{ $akun->password }}</td>
               <td>
                 <a href="/editprofil/{{ $akun->id }}" class="btn btn-warning btn-sm">
-                  Edit
+                <i class="fas fa-user-edit"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/akun/{{ $akun->id }}/hapus" class="btn btn-warning btn-sm">
-                  Hapus
+                <i class="fas fa-trash"></i>
                 </a>
               </td>
               </tr>

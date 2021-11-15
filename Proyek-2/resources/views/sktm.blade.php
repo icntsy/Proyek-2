@@ -62,13 +62,13 @@
               <td>{{ $sktm->status_kawin }}</td>
               <td>
                 <a href="" class="btn btn-warning btn-sm">
-                  Edit
+                <i class="fas fa-edit"></i>
                 </a>
                 <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/sktm.pdf?id={{$sktm->id}}" class="btn btn-danger btn-sm" target="_blank">
-                  Print
+                <i class="fas fa-print"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sktm/{{ $sktm->id }}/hapus" class="btn btn-warning btn-sm">
-                  Hapus
+                <i class="fas fa-trash"></i>
                 </a>
               </td>
             </tr>
