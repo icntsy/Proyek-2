@@ -18,7 +18,7 @@ class SkuController extends Controller
             "data_sku" => Sku::all()
         ];
 
-        return view("/sku", $data);
+        return view("/admin/sku/data_sku", $data);
     }
 
     /**
@@ -37,10 +37,24 @@ class SkuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function proses_tambah_sku(Request $request)
     {
-        //
-    }
+        //untuk tanbah
+        // dd($request);
+        sku::create([
+            'nama' =>$request->nama,
+            'tempat_lahir'=>$request->tempat_lahir,
+            'tanggal_lahir'=>$request->tanggal_lahir,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'agama'=>$request->agama,
+            'pekerjaan'=>$request->pekerjaan,
+            'alamat'=>$request->alamat,
+            'keterangan'=>$request->keterangan,
+
+
+            ]);
+            return redirect("/sku");
+        }
 
     /**
      * Display the specified resource.
@@ -87,5 +101,10 @@ class SkuController extends Controller
         Sku::where("id", $id)->delete();
 
         return redirect()->back();
+    }
+    public function form_tambah_sku()
+    {
+        return view("admin/sku/form_tambah_sku");
+
     }
 }

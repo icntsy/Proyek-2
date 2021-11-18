@@ -18,10 +18,10 @@ class SkdController extends Controller
             "data_skd" => Skd::all()
         ];
 
-        return view("/skd", $data);
+        return view("/admin/skd/data_skd", $data);
     }
 
-    /**
+    /*
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -37,10 +37,23 @@ class SkdController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function proses_tambah_skd(Request $request)
     {
-        //
-    }
+        //untuk tanbah
+        // dd($request);
+        skd::create([
+            'nama' =>$request->nama,
+            'tempat_lahir'=>$request->tempat_lahir,
+            'tanggal_lahir'=>$request->tanggal_lahir,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'agama'=>$request->agama,
+            'pekerjaan'=>$request->pekerjaan,
+            'alamat'=>$request->alamat,
+            'keterangan'=>$request->keterangan
+
+            ]);
+            return redirect("/skd");
+        }
 
     /**
      * Display the specified resource.
@@ -88,4 +101,10 @@ class SkdController extends Controller
 
         return redirect()->back();
     }
+    public function form_tambah_skd()
+    {
+        return view("admin/skd/form_tambah_skd");
+
+    }
 }
+

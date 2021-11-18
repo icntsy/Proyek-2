@@ -4,6 +4,21 @@
 
 @section("page_content")
 
+<div class="row align-items-center py-4">
+  <div class="col-lg-6 col-7">
+    <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+      <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+        <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Default</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-6 col-5 text-right">
+    <a href="{{ url('/sku/form_tambah_sku') }}" class="btn btn-sm btn-neutral">Tambah Data</a>
+  </div>
+</div>
 
 <div class="row">
   <div class="col">
@@ -11,7 +26,7 @@
       <!-- Card header -->
       <div class="card-header border-0">
         <h3 class="mb-0">
-        @if(auth()->user()->role == 1)
+          @if(auth()->user()->role == 1)
 
           Surat Keterangan Usaha
 
@@ -27,7 +42,7 @@
         <table class="table align-items-center table-flush">
           <thead class="thead-light">
             <tr>
-            <th scope="col" class="sort" data-sort="name">No.</th>
+              <th scope="col" class="sort" data-sort="name">No.</th>
               <th scope="col" class="sort" data-sort="status">Nama</th>
               <th scope="col" class="sort" data-sort="status">Tempat Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Tanggal Lahir</th>
@@ -54,16 +69,16 @@
               <td>{{ $sku->alamat }}</td>
               <td>
                 <a href="/editsurat" class="btn btn-warning btn-sm">
-                <i class="fas fa-edit"></i>
+                  <i class="fas fa-edit"></i>
                 </a>
                 <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/Sku.pdf?id={{$sku->id}}" class="btn btn-danger btn-sm" target="_blank">
-                <i class="fas fa-print"></i>
+                  <i class="fas fa-print"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-warning btn-sm">
-                <i class="fas fa-trash"></i>
+                  <i class="fas fa-trash"></i>
                 </a>
               </td>
-              </tr>
+            </tr>
             @endforeach
           </tbody>
         </table>

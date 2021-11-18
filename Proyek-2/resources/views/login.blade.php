@@ -7,12 +7,12 @@
     <title>Login - Sisdayu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
-    <link rel="stylesheet" href="/layouts/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/layouts/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/layouts/assets/css/themify-icons.css">
-    <link rel="stylesheet" href="/layouts/assets/css/metisMenu.css">
-    <link rel="stylesheet" href="/layouts/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/layouts/assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ url('/layouts') }}/assets/css/slicknav.min.css">
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- others css -->
@@ -42,7 +42,7 @@
                     {{ session("session") }}
                 </div>
                 @endif
-                <form action="/login_cek" method="post">
+                <form action="{{ url('/login_cek') }}" method="post">
                     <div class="login-form-head">
                         <h4>Login</h4>
                         <p>Hello, Silahkan Login Terlebih Dahulu</p>

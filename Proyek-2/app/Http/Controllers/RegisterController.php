@@ -23,6 +23,7 @@ class RegisterController extends Controller
             'nama' =>$request->nama,
             'email'=>$request->email,
             'password'=> bcrypt($request->password),
+            'role' => 1
         ]);
 
         return redirect("/login");

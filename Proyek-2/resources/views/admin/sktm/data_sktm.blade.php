@@ -4,6 +4,21 @@
 
 @section("page_content")
 
+<div class="row align-items-center py-4">
+  <div class="col-lg-6 col-7">
+    <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+      <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+        <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Default</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-6 col-5 text-right">
+    <a href="{{ url('/sktm/form_tambah_sktm') }}" class="btn btn-sm btn-neutral">Tambah Data</a>
+  </div>
+</div>
 
 
 <div class="row">
@@ -35,11 +50,11 @@
               <th scope="col" class="sort" data-sort="status">Tempat Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Tanggal Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
-              <th scope="col" class="sort" data-sort="budget">Kewarganegaraan</th>
+              <!-- <th scope="col" class="sort" data-sort="budget">Kewarganegaraan</th> -->
               <th scope="col" class="sort" data-sort="budget">Agama</th>
-              <th scope="col" class="sort" data-sort="budget">Alamat</th>
+              <!-- <th scope="col" class="sort" data-sort="budget">Alamat</th> -->
               <th scope="col" class="sort" data-sort="budget">Pekerjaan</th>
-              <th scope="col" class="sort" data-sort="budget">Status Kawin</th>
+              <!-- <th scope="col" class="sort" data-sort="budget">Status Kawin</th> -->
               <th scope="col">Aksi</th>
               <th scope="col"></th>
             </tr>
@@ -55,11 +70,11 @@
               <td>{{ $sktm->tempat_lahir }}</td>
               <td>{{ $sktm->tanggal_lahir }}</td>
               <td>{{ $sktm->jenis_kelamin }}</td>
-              <td>{{ $sktm->kewarganegaraan }}</td>
+              <!-- <td>{{ $sktm->kewarganegaraan }}</td> -->
               <td>{{ $sktm->agama }}</td>
-              <td>{{ $sktm->alamat }}</td>
+              <!-- <td>{{ $sktm->alamat }}</td> -->
               <td>{{ $sktm->pekerjaan }}</td>
-              <td>{{ $sktm->status_kawin }}</td>
+              <!-- <td>{{ $sktm->status_kawin }}</td> -->
               <td>
                 <a href="" class="btn btn-warning btn-sm">
                 <i class="fas fa-edit"></i>

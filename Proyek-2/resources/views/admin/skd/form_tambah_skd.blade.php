@@ -168,7 +168,7 @@
                       </ol>
                     </nav>
                   </div>
-                  @yield("page_tambah")
+                  @yield("form_tambah")
                   <div class="col-lg-6 col-5 text-right">
                     <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
 
@@ -191,42 +191,66 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Edit Profile</h3>
+                  <h3 class="mb-0">Tambah Surat Keterangan Domisili</h3>
                 </div>
 
               </div>
             </div>
             <div class="card-body">
-              <form action="/user/{{$user->id}}" method="post" >
+              <form action="/tambah_skd" method="post" >
               @csrf
-              @method('put')
-                <h6 class="h eading-small text-muted mb-4">User information</h6>
+              <!-- @method('put') -->
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-username">Full Name</label>
-                        <input type="text" name="full_name" id="input-username" class="form-control" placeholder="Full name" value="{{ $user->nama }}">
+                        <label class="form-control-label" for="input-name">Nama Lengkap</label>
+                        <input type="text" name="nama" id="name" class="form-control" placeholder="name">
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-email">Email address</label>
-                        <input type="email" name="email" id="input-email" class="form-control" placeholder="Email Address" value="{{ $user->email }}">
+                        <label class="form-control-label" for="tempat_lahir">Tempat Lahir</label>
+                        <input type="teks" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-first-name">Password</label>
-                        <input type="password" name="password" id="input-first-name" class="form-control" placeholder="Password" >
+                        <label class="form-control-label" for="tanggal_lahir">Tanggal Lahir</label>
+                        <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir" >
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-last-name">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="input-last-name" class="form-control" placeholder="Confirm Password"> <br>
+                        <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
+                        <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
+                      </div>
+                    </div>
+                        <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Agama</label>
+                        <input type="text" name="agama"  id="input-last-name" class="form-control" placeholder="Agama">
+                      </div>
+                        </div>
+                        <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Pekerjaan</label>
+                        <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan">
+                      </div>
+                        </div>
+                        <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Alamat</label>
+                        <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
+                      </div>
+                        </div>
+                        <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Keterangan</label>
+                      </div>
+                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br>
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                         </div>

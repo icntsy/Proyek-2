@@ -13,4 +13,23 @@ class Edit_ProfilController extends Controller
         $user = User::where('id', $id)->first();
         return view("editprofil", compact('user'));
     }
+
+    public function edit(Request $request, $id)
+    {
+        $nama = $request->full_name;
+        $email = $request->email;
+        $password = $request->password;
+
+        User::where('id', $id)->update([
+            'nama' => $nama,
+            'email' => $email,
+            'password'=> bcrypt($request->password)
+        ]);
+
+        return redirect('/akun');
+    }
 }
+
+
+
+

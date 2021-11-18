@@ -42,8 +42,6 @@ Route::group(["middleware" => "admin"], function () {
         return view("/template/layout");
     });
 });
-
-
 Route::get("/login", [LoginController::class, "index"])->middleware("guest");
 
 Route::get("/register", [RegisterController::class, "index"]);
@@ -54,16 +52,33 @@ Route::get("/sku", [SkuController::class, "index"]);
 
 //Route::resources("skd", [SkdController]);
 
-Route::get("/skd", [SkdController::class, "index"]);
-Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
+Route::prefix("skd")->group(function() {
+    Route::get("/", [SkdController::class, "index"]);
+    Route::get("/form_tambah_skd", [SkdController::class, "form_tambah_skd"]);
+    Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
+});
+Route::post("tambah_skd", [SkdController::class, "proses_tambah_skd"]);
 
-Route::get("/sku", [SkuController::class, "index"]);
-Route::get("/sku/{id}/hapus", [SkuController::class, "destroy"]);
+
+// Route::prefix("sktm")->group(function() {
+//     Route::get("/", [SktmController::class, "index"]);
+//     Route::get("/form_tambah_sktm", [SktmController::class, "form_tambah_sktm"]);
+//     Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
+// });
+Route::get("sktm/form_tambah_sktm", [SktmController::class, "form_tambah_sktm"]);
+Route::post("tambah_sktm", [SktmController::class, "proses_tambah_sktm"]);
+
+Route::get("sku/form_tambah_sku", [SkuController::class, "form_tambah_sku"]);
+Route::post("tambah_sku", [SkuController::class, "proses_tambah_sku"]);
+
+
+// Route::get("sku/tambah", [SkuController::class, "surat"]);
+
 
 Route::get("/sktm", [SktmController::class, "index"]);
-
-Route::get("/sktm", [SktmController::class, "index"]);
+// Route::get("/sktm", [Skttroller::class, "indmConex"]);
 Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
+Route::get("/sku/{id}/hapus", [SkuController::class, "destroy"]);
 
 Route::get("/penduduk", [PendudukController::class, "index"]);
 Route::get("/penduduk/{id}/hapus", [PendudukController::class, "destroy"]);
@@ -80,3 +95,5 @@ Route::get("/akun/{id}/hapus", [akunController::class, "destroy"]);
 Route::get("/editprofil/{id}", [Edit_ProfilController::class, "index"]);
 
 Route::get("/editsurat", [editsuratController::class, "index"]);
+
+Route::put('user/{id}', [Edit_ProfilController::class, "edit"]);
