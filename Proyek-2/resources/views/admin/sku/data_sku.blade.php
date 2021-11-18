@@ -9,8 +9,8 @@
     <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
     <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
       <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-        <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+        <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
+        <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
         <li class="breadcrumb-item active" aria-current="page">Default</li>
       </ol>
     </nav>
@@ -74,7 +74,7 @@
                 <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/Sku.pdf?id={{$sku->id}}" class="btn btn-danger btn-sm" target="_blank">
                   <i class="fas fa-print"></i>
                 </a>
-                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-warning btn-sm">
+                <a onclick="return confirm('Ingin Menghapus Data SKU Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-warning btn-sm">
                   <i class="fas fa-trash"></i>
                 </a>
               </td>

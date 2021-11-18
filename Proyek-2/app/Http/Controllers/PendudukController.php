@@ -37,10 +37,24 @@ class PendudukController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function proses_tambah_penduduk(Request $request)
     {
-        //
-    }
+        //untuk tanbah
+        // dd($request);
+        penduduk::create([
+            'nama' =>$request->nama,
+            'nik' =>$request->nik,
+            // 'tempat_lahir'=>$request->tempat_lahir,
+            // 'tanggal_lahir'=>$request->tanggal_lahir,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'kewarganegaraan' =>$request->kewarganegaraan,
+            'agama'=>$request->agama,
+            'alamat'=>$request->alamat
+
+
+            ]);
+            return redirect("/penduduk");
+        }
 
     /**
      * Display the specified resource.
@@ -87,5 +101,10 @@ class PendudukController extends Controller
         penduduk::where("id", $id)->delete();
 
         return redirect()->back();
+    }
+    public function form_tambah_penduduk()
+    {
+        return view("/form_tambah_penduduk");
+
     }
 }

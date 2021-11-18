@@ -55,7 +55,7 @@ Route::get("/sku", [SkuController::class, "index"]);
 Route::prefix("skd")->group(function() {
     Route::get("/", [SkdController::class, "index"]);
     Route::get("/form_tambah_skd", [SkdController::class, "form_tambah_skd"]);
-    Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
+
 });
 Route::post("tambah_skd", [SkdController::class, "proses_tambah_skd"]);
 
@@ -74,9 +74,14 @@ Route::post("tambah_sku", [SkuController::class, "proses_tambah_sku"]);
 
 // Route::get("sku/tambah", [SkuController::class, "surat"]);
 
+Route::get("/form_tambah_penduduk", [PendudukController::class, "form_tambah_penduduk"]);
+Route::post("tambah_penduduk", [PendudukController::class, "proses_tambah_penduduk"]);
+
+
 
 Route::get("/sktm", [SktmController::class, "index"]);
 // Route::get("/sktm", [Skttroller::class, "indmConex"]);
+Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
 Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
 Route::get("/sku/{id}/hapus", [SkuController::class, "destroy"]);
 

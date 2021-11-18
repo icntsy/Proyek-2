@@ -5,7 +5,21 @@
 @section("page_content")
 
 
-
+<div class="row align-items-center py-4">
+  <div class="col-lg-6 col-7">
+    <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+      <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+        <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
+        <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Default</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-lg-6 col-5 text-right">
+    <a href="{{ url('/form_tambah_penduduk') }}" class="btn btn-sm btn-neutral">Tambah Data</a>
+  </div>
+</div>
 <div class="row">
   <div class="col">
     <div class="card">
@@ -56,7 +70,7 @@
                 <a href="" class="btn btn-warning btn-sm">
                 <i class="fas fa-edit"></i>
                 </a>
-                <a onclick="return confirm('Ingin Menghapus Data Ini ?')" href="/penduduk/{{ $pdd->id }}/hapus" class="btn btn-danger btn-sm">
+                <a onclick="return confirm('Ingin Menghapus Data Kependudukan Ini ?')" href="/penduduk/{{ $pdd->id }}/hapus" class="btn btn-danger btn-sm">
                 <i class="fas fa-trash"></i>
                 </a>
 

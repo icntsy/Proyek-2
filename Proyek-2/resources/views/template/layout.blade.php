@@ -123,17 +123,17 @@
                 <i class="ni ni-bell-55"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
-                <!-- Dropdown header -->
+                <!-- Dropdown header
                 <div class="px-3 py-3">
                   <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong> notifications.</h6>
                 </div>
                 <!-- List group -->
-                <div class="list-group list-group-flush">
+                <!-- <div class="list-group list-group-flush">
                   <a href="#!" class="list-group-item list-group-item-action">
                     <div class="row align-items-center">
                       <div class="col-auto">
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                        <!-- <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-1.jpg" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -150,9 +150,9 @@
                   </a>
                   <a href="#!" class="list-group-item list-group-item-action">
                     <div class="row align-items-center">
-                      <div class="col-auto">
+                      <div class="col-auto"> -->
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-2.jpg" class="avatar rounded-circle">
+                        <!-- <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-2.jpg" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -169,9 +169,9 @@
                   </a>
                   <a href="#!" class="list-group-item list-group-item-action">
                     <div class="row align-items-center">
-                      <div class="col-auto">
+                      <div class="col-auto"> -->
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-3.jpg" class="avatar rounded-circle">
+                        <!-- <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-3.jpg" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -190,7 +190,7 @@
                     <div class="row align-items-center">
                       <div class="col-auto">
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-4.jpg" class="avatar rounded-circle">
+                        <!-- <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-4.jpg" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -207,9 +207,9 @@
                   </a>
                   <a href="#!" class="list-group-item list-group-item-action">
                     <div class="row align-items-center">
-                      <div class="col-auto">
+                      <div class="col-auto"> -->
                         <!-- Avatar -->
-                        <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                        <!-- <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-5.jpg" class="avatar rounded-circle">
                       </div>
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
@@ -224,17 +224,17 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </div>  -->
                 <!-- View all -->
-                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                <!-- <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
               </div>
-            </li>
-            <li class="nav-item dropdown">
+            </li>  -->
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="ni ni-ungroup"></i>
               </a>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
-                <div class="row shortcuts px-4">
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right "> -->
+                <!-- <div class="row shortcuts px-4">
                   <a href="#!" class="col-4 shortcut-item">
                     <span class="shortcut-media avatar rounded-circle bg-gradient-red">
                       <i class="ni ni-calendar-grid-58"></i>
@@ -271,9 +271,9 @@
                     </span>
                     <small>Shop</small>
                   </a>
-                </div>
-              </div>
-            </li>
+                </div> -->
+              <!-- </div>
+            </li> -->
           </ul>
           <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
             <li class="nav-item dropdown">
@@ -283,7 +283,7 @@
                     <img alt="Image placeholder" src="{{ asset('/admin') }}/assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Admin</span>
                   </div>
                 </div>
               </a>
@@ -291,7 +291,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <!-- <a href="#!" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
@@ -311,7 +311,7 @@
                 <a href="#!" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
-                </a>
+                </a> -->
               </div>
             </li>
           </ul>
