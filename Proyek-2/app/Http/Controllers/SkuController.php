@@ -73,10 +73,32 @@ class SkuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        $nama = $request->nama;
+        $tempat_lahir = $request->tempat_lahir;
+        $tanggal_lahir = $request->tanggal_lahir;
+        $jenis_kelamin = $request->jenis_kelamin;
+        $agama = $request->agama;
+        $alamat = $request->alamat;
+        $pekerjaan = $request->pekerjaan;
+        $keterangan = $request->keterangan;
+
+        sku::where('id', $id)->update([
+
+            'nama' =>$nama,
+            'tempat_lahir'=>$tempat_lahir,
+            'tanggal_lahir'=>$tanggal_lahir,
+            'jenis_kelamin'=>$jenis_kelamin,
+            'agama'=>$agama,
+            'alamat'=>$alamat,
+            'pekerjaan'=>$pekerjaan,
+            'keterangan'=>$keterangan
+        ]);
+
+        return redirect('/sku');
     }
+
 
     /**
      * Update the specified resource in storage.
@@ -105,6 +127,14 @@ class SkuController extends Controller
     public function form_tambah_sku()
     {
         return view("admin/sku/form_tambah_sku");
+
+    }
+    public function tampilan($id){
+        $data = [
+            "sku" => sku::where("id", $id)->first()
+        ];
+
+        return view('/admin/sku/edit_sku',$data);
 
     }
 }

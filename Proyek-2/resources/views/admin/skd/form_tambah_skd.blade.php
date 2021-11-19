@@ -66,8 +66,6 @@
                 <span class="nav-link-text">Data Kependudukan</span>
               </a>
             </li>
-
-
             <li class="nav-item">
               <a class="nav-link" href="/akun">
                 <i class="ni ni-circle-08 text-pink"></i>
@@ -171,21 +169,17 @@
                   @yield("form_tambah")
                   <div class="col-lg-6 col-5 text-right">
                     <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
-
                   </div>
                 </div>
                 <!-- Card stats -->
-
                 @if(session("session"))
                 <div class="alert alert-success">
                   {{ session("session") }}
                 </div>
                 @endif
-
               </div>
             </div>
           </div>
-
         <div class="col-xl-8 order-xl-1">
           <div class="card">
             <div class="card-header">
@@ -193,7 +187,6 @@
                 <div class="col-8">
                   <h3 class="mb-0">Tambah Surat Keterangan Domisili</h3>
                 </div>
-
               </div>
             </div>
             <div class="card-body">

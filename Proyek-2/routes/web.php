@@ -104,3 +104,10 @@ Route::get("/editsurat", [editsuratController::class, "index"]);
 Route::put('user/{id}', [Edit_ProfilController::class, "edit"]);
 
 Route::get('/skd/edit/{id}', [SkdController::class, "tampilan"]);
+Route::post('/skd/update/{id}', [SkdController::class, "edit"]);
+
+Route::get('/sktm/edit/{id}', [SktmController::class, "tampilan"]);
+Route::post('/sktm/update/{id}', [SktmController::class, "edit"]);
+
+Route::get('/sku/edit/{id}', [SkuController::class, "tampilan"]);
+Route::post('/sku/update/{id}', [SkuController::class, "edit"]);

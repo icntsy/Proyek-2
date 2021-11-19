@@ -260,15 +260,14 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Status Kawin</label>
+                                        <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin">
                                     </div>
-                                    <input type="text" name="status_kawin" id="input-last-name" class="form-control" placeholder="status_kawin"> <br>
-
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-                                    </div>
-                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br>
+
+                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br>\
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>

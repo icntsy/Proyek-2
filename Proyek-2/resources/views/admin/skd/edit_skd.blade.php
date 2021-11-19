@@ -15,8 +15,9 @@
             </div>
             <div class="card-body">
 
-              <form action="" method="post" >
+              <form action="/skd/update/{{$skd->id}}" method="post" >
               @csrf
+
               <!-- @method('put') -->
                 <div class="pl-lg-4">
                   <div class="row">
@@ -67,9 +68,9 @@
                         <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Keterangan</label>
+                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$skd->keterangan}}">
                       </div>
-                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan" value="{{$skd->keterangan}}"> <br>
-                        <div class="submit-btn-area">
+                        </div>
                             <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                         </div>
                       </div>

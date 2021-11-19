@@ -87,7 +87,7 @@ class SkdController extends Controller
     {
         $nama = $request->nama;
         $tempat_lahir = $request->tempat_lahir;
-        $tanggal_lahir = $request->password;
+        $tanggal_lahir = $request->tanggal_lahir;
         $jenis_kelamin = $request->jenis_kelamin;
         $agama = $request->agama;
         $alamat = $request->alamat;
