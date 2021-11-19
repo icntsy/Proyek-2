@@ -111,3 +111,6 @@ Route::post('/sktm/update/{id}', [SktmController::class, "edit"]);
 
 Route::get('/sku/edit/{id}', [SkuController::class, "tampilan"]);
 Route::post('/sku/update/{id}', [SkuController::class, "edit"]);
+
+Route::get('/penduduk/edit/{id}', [PendudukController::class, "tampilan"]);
+Route::post('/penduduk/update/{id}', [PendudukController::class, "edit"]);

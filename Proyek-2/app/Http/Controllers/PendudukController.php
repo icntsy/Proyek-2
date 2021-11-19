@@ -31,6 +31,15 @@ class PendudukController extends Controller
         //
     }
 
+    public function tampilan($id){
+        $data = [
+            "penduduk" => penduduk::where("id", $id)->first()
+        ];
+
+        return view('/edit_penduduk',$data);
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -44,8 +53,6 @@ class PendudukController extends Controller
         penduduk::create([
             'nama' =>$request->nama,
             'nik' =>$request->nik,
-            // 'tempat_lahir'=>$request->tempat_lahir,
-            // 'tanggal_lahir'=>$request->tanggal_lahir,
             'jenis_kelamin'=>$request->jenis_kelamin,
             'kewarganegaraan' =>$request->kewarganegaraan,
             'agama'=>$request->agama,
@@ -73,9 +80,36 @@ class PendudukController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        $nama = $request->nama;
+        $nik = $request->nik;
+        // $tempat_lahir = $request->tempat_lahir;
+        // $tanggal_lahir = $request->tanggal_lahir;
+        $jenis_kelamin = $request->jenis_kelamin;
+        $kewarganegaraan = $request->kewarganegaraan;
+        $agama = $request->agama;
+        $alamat = $request->alamat;
+        // $pekerjaan = $request->pekerjaan;
+        // $status_kawin = $request->status_kawin;
+        // $keterangan = $request->keterangan;
+
+        penduduk::where('id', $id)->update([
+
+            'nama' =>$nama,
+            'nik' =>$nik,
+            // 'tempat_lahir'=>$tempat_lahir,
+            // 'tanggal_lahir'=>$tanggal_lahir,
+            'jenis_kelamin'=>$jenis_kelamin,
+            'kewarganegaraan' =>$kewarganegaraan,
+            'agama'=>$agama,
+            'alamat'=>$alamat
+            // 'pekerjaan'=>$pekerjaan,
+            // 'status_kawin'=>$status_kawin,
+            // 'keterangan'=>$keterangan
+        ]);
+
+        return redirect('/penduduk');
     }
 
     /**

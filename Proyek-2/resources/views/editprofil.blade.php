@@ -200,7 +200,7 @@
               <form action="/user/{{$user->id}}" method="post" >
               @csrf
               @method('put')
-                <h6 class="h eading-small text-muted mb-4">User information</h6>
+
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-lg-6">

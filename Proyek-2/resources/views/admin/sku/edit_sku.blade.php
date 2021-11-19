@@ -42,6 +42,12 @@
                                         <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin" value="{{$sku->jenis_kelamin}}">
                                     </div>
                                 </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-last-name">Agama</label>
+                                        <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama" value="{{$sku->agama}}">
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -50,12 +56,7 @@
                                         <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir" value="{{$sku->tanggal_lahir}}">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Agama</label>
-                                        <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama" value="{{$sku->agama}}">
-                                    </div>
-                                </div>
+
                                 <!-- <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>

@@ -67,7 +67,7 @@
               <td>{{ $pdd->agama }}</td>
               <td>{{ $pdd->alamat }}</td>
               <td>
-                <a href="" class="btn btn-warning btn-sm">
+                <a href="/penduduk/edit/{{$pdd->id}}" class="btn btn-warning btn-sm">
                 <i class="fas fa-edit"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data Kependudukan Ini ?')" href="/penduduk/{{ $pdd->id }}/hapus" class="btn btn-danger btn-sm">
