@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -168,7 +167,7 @@
                       </ol>
                     </nav>
                   </div>
-                  @yield("form_tambah")
+                  @yield("page_tambah")
                   <div class="col-lg-6 col-5 text-right">
                     <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
 
@@ -186,18 +185,19 @@
             </div>
           </div>
 
-        <div class="col-xl-8 order-xl-1">
+          <div class="col-xl-8 order-xl-1">
           <div class="card">
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Tambah Surat Keterangan Domisili</h3>
+                  <h3 class="mb-0">Edit Surat Keterangan Domisili</h3>
                 </div>
 
               </div>
             </div>
             <div class="card-body">
-              <form action="/tambah_skd" method="post" >
+              <!-- <form action="/skd/{{$skd->id}}" method="post" > -->
+              <form action="/skd/{{$skd->id}}" method="post" >
               @csrf
               <!-- @method('put') -->
                 <div class="pl-lg-4">
@@ -261,7 +261,6 @@
                 <hr class="my-4" />
             </div>
           </div>
-</div>
 
   <!-- Content -->
   <div class="container-fluid mt--6">
@@ -306,4 +305,4 @@
         <!-- Argon JS -->
         <script src="/admin/assets/js/argon.js?v=1.2.0"></script>
       </body>
-      </html>
+</html>

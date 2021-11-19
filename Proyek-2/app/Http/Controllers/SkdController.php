@@ -31,6 +31,17 @@ class SkdController extends Controller
         //
     }
 
+    public function tampilan($id){
+        $data = [
+            "skd" => skd::where("id", $id)->first()
+        ];
+
+        return view('/admin/skd/edit_skd',$data);
+
+    }
+
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -72,9 +83,30 @@ class SkdController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        $nama = $request->nama;
+        $tempat_lahir = $request->tempat_lahir;
+        $tanggal_lahir = $request->password;
+        $jenis_kelamin = $request->jenis_kelamin;
+        $agama = $request->agama;
+        $alamat = $request->alamat;
+        $pekerjaan = $request->pekerjaan;
+        $keterangan = $request->keterangan;
+
+        skd::where('id', $id)->update([
+
+            'nama' =>$nama,
+            'tempat_lahir'=>$tempat_lahir,
+            'tanggal_lahir'=>$tanggal_lahir,
+            'jenis_kelamin'=>$jenis_kelamin,
+            'agama'=>$agama,
+            'pekerjaan'=>$pekerjaan,
+            'alamat'=>$alamat,
+            'keterangan'=>$keterangan
+        ]);
+
+        return redirect('/skd');
     }
 
     /**

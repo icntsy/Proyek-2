@@ -65,7 +65,7 @@
               <td>{{ $skd->agama }}</td>
               <td>{{ $skd->keterangan }}</td>
               <td>
-                <a href="" class="btn btn-warning btn-sm">
+                <a href="/skd/edit/{{$skd->id}}" class="btn btn-warning btn-sm">
                   <i class="fas fa-edit"></i>
                 </a>
 

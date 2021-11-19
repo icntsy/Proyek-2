@@ -102,3 +102,5 @@ Route::get("/editprofil/{id}", [Edit_ProfilController::class, "index"]);
 Route::get("/editsurat", [editsuratController::class, "index"]);
 
 Route::put('user/{id}', [Edit_ProfilController::class, "edit"]);
+
+Route::get('/skd/edit/{id}', [SkdController::class, "tampilan"]);
