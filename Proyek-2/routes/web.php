@@ -15,6 +15,9 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PendudukController;
 use App\Http\Controllers\Edit_ProfilController;
 use App\Http\Controllers\akunController;
+use App\Http\Controllers\FormulirskdController;
+use App\Http\Controllers\FormulirskuController;
+use App\Http\Controllers\FormulirsktmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -105,12 +108,16 @@ Route::put('user/{id}', [Edit_ProfilController::class, "edit"]);
 
 Route::get('/skd/edit/{id}', [SkdController::class, "tampilan"]);
 Route::post('/skd/update/{id}', [SkdController::class, "edit"]);
+Route::get("/formulirskd", [FormulirskdController::class, "index"]);
+// Route::post("formulir_skd", [FormulirskdController::class, "formulir"]);
 
 Route::get('/sktm/edit/{id}', [SktmController::class, "tampilan"]);
 Route::post('/sktm/update/{id}', [SktmController::class, "edit"]);
+Route::get("/formulirsktm", [FormulirsktmController::class, "index"]);
 
 Route::get('/sku/edit/{id}', [SkuController::class, "tampilan"]);
 Route::post('/sku/update/{id}', [SkuController::class, "edit"]);
+Route::get("/formulirsku", [FormulirskuController::class, "index"]);
 
 Route::get('/penduduk/edit/{id}', [PendudukController::class, "tampilan"]);
 Route::post('/penduduk/update/{id}', [PendudukController::class, "edit"]);

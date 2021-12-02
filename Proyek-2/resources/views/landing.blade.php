@@ -5,133 +5,115 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Landing Page - Start Bootstrap Theme</title>
+        <title>Halaman user</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#!">SISDAYU</a>
-
-                <a class="btn btn-primary" href="#signup">Layanan Surat</a>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Sisdayu</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#surat">Informasi Surat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Layanan">Layanan</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">Selamat Datang</h1>
-                            <h3>Sistem Pengajuan Pembuatan Surat Desa Dermayu!</h3>
-
-
-                        </div>
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Sistem Informasi Surat Desa Dermayu</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
                     </div>
                 </div>
             </div>
         </header>
-
-        <!-- Image Showcases-->
-        <section class="showcase" id="tentang">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Tentang SISDAYU</h2>
-                        <p class="lead mb-0">Sisdayu adalah sebuah platform pelayanan publik yang berfokus terhadap
-                            pelayanan pengajuan surat di desa Dermayu.  Dari berbagai layanan tersebut
-                            kami juga menyediakan kotak layanan untuk warga desa kepada aparatur desa secara virtual. Dengan Sistem yang kami ciptakan ini bertujuan untuk
-                            mempermudah proses administratif dan mempercepat pelayanan masyarakat di desa.</p>
+        <!-- About-->
+        <section class="page-section bg-primary" id="tentang">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Tentang</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Sisdayu adalah sebuah platform pelayanan publik yang berfokus terhadap
+                            pelayanan pengajuan surat di desa Dermayu. Dari berbagai layanan tersebut kami juga menyediakan
+                            kotak layanan untuk warga desa kepada aparatur desa secara virtual. Dengan Sistem yang kami ciptakan
+                            ini bertujuan untuk mempermudah proses administratif dan mempercepat pelayanan masyarakat di desa.</p>
+                        <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
                 </div>
-
-                        <!-- Icons Grid-->
-        <section class="features-icons bg-light text-center" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Surat Keterangan Usaha</h3>
-                            <p class="lead mb-0">Surat keterangan usaha sangat dibutuhkan terutama bagi bisnis yang baru dirintis,
-                                karena surat keterangan usaha diperlukan ketika ingin mengajukan kredit usaha ataupun beberapa hal lainnya terkait perijinan.</p>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="surat">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Informasi Surat</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-envelope-open fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Surat Keterangan Domisili</h3>
+                            <p class="text-muted mb-0">Surat Keterangan Domisili adalah sebuah surat yang menyatakan domisili
+                                seseorang atau suatu badan usaha. Surat Keterangan Domisili dibutuhkan untuk mengurus berbagai
+                                dokumen legal lainnya seperti SIUP, Tanda Daftar Perusahaan, NPWP dan untuk mengurus perdagangan lainnya.
+                            </p> <br>
+                            <a class="btn btn-dark btn-xs" href="/formulirskd">Pengisian Formulir</a>
                         </div>
-                        <nav class="navbar navbar-light bg-light static-top">
-                            <div class="container">
-                                <a class="btn btn-primary" href="#">Pengisian Formulir</a>
-                            </div>
-                        </nav>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Surat Keterangan Domisili</h3>
-                            <p class="lead mb-0">Surat keterangan domisili atau SKD adalah surat pernyataan dari pejabat yang berwenang
-                                        sebagai bukti bahwa pendatang telah melapor dan memiliki tempat tinggal tetap. </p>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-envelope-open fs-1 text-primary"></i></i></div>
+                            <h3 class="h4 mb-2">Surat Keterangan usaha</h3>
+                            <p class="text-muted mb-0">Surat Keterangan Usaha adalah dokumen administratif yang dikeluarkan pemerintahan
+                                melalui Kelurahan atau Kecamatan. Surat ini adalah pengakuan resmi dari pemerintah daerah bahwa benar,
+                                suatu ada dalam suatu daerah administratif tertentu.
+                            </p> <br>
+                            <a class="btn btn-dark btn-xs" href="/formulirsku">Pengisian Formulir</a>
                         </div>
-                        <nav class="navbar navbar-light bg-light static-top">
-                            <div class="container">
-                                <a class="btn btn-primary" href="layouts/assets/formulir.html">Pengisian Formulir</a>
-                            </div>
-                        </nav>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Surat Keterangan Tidak Mampu</h3>
-                            <p class="lead mb-0">SKTM adalah surat yang dikeluarkan oleh pihak Kelurahan/Desa
-                                bagi Keluarga Miskin. SKTM dianggap mewakili proses pembuktian bahwa seseorang memang tidak mampu.</p>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-envelope-open fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Surat Keterangan Tidak Mampu</h3>
+                            <p class="text-muted mb-0">Surat Keterangan Tidak Mampu merupakan sebuah surat yang dikeluarkan oleh pemerintah
+                                desa dan kelurahan untuk keluarga miskin dan tidak mampu. Setiap keluarga yang termasuk ke dalam kriteria
+                                tersebut berhak untuk mengajukan dan membuat Surat Keterangan Tidak Mampu.</p>
+                            <a class="btn btn-dark btn-xs" href="/formulirsktm">Pengisian Formulir</a>
                         </div>
-                        <nav class="navbar navbar-light bg-light static-top">
-                            <div class="container">
-                                <a class="btn btn-primary" href="#">Pengisian Formulir</a>
-                            </div>
-                        </nav>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                        <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#">Beranda</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#tentang">Tentang</a></li>
-                            <li class="list-inline-item">⋅</li>
-                        </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Proyek-2 2021. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">Copyright &copy; 2021 - Kelompok-2</div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->

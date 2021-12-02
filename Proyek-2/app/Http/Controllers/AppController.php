@@ -9,6 +9,7 @@ use App\Models\sktm;
 use App\Models\penduduk;
 use App\Models\akun;
 
+
 class AppController extends Controller
 {
     public function app()
