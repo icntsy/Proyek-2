@@ -81,10 +81,16 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                <div class="form-group">
+                                        <label class="form-control-label" for="input-last-name">Nohp</label>
+                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp" value="{{$sktm->nohp}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-
-                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$sktm->keterangan}}"> <br>
+                                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$sktm->keterangan}}">
+                                    </div>
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>

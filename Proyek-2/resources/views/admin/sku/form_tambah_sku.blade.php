@@ -225,14 +225,6 @@
                                         <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="tanggal_lahir">Tanggal Lahir</label>
-                                        <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir">
-                                    </div>
-                                </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -242,15 +234,31 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
+                                        <label class="form-control-label" for="input-last-name">Nohp</label>
+                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="tanggal_lahir">Tanggal Lahir</label>
+                                        <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Alamat</label>
                                         <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="form-group">
+                                <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-
-                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br>
+                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan">
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>

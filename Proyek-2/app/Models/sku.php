@@ -9,7 +9,7 @@ class sku extends Model
 {
     use HasFactory;
 
-    protected $table = "tbl_sku";
+    protected $table = "tabel_sku";
 
     protected $guarded = [''];
 

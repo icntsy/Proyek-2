@@ -22,6 +22,8 @@ class CreateTblSkdTable extends Migration
             $table->string('agama');
             $table->string('pekerjaan');
             $table->string('alamat');
+            $table->string('keterangan');
+            $table->string('nohp');
             $table->timestamps();
         });
     }

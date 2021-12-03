@@ -61,7 +61,8 @@ class SktmController extends Controller
             'alamat'=>$request->alamat,
             'pekerjaan'=>$request->pekerjaan,
             'status_kawin'=>$request->status_kawin,
-            'keterangan'=>$request->keterangan
+            'keterangan'=>$request->keterangan,
+            'nohp'=>$request->nohp
 
             ]);
             return redirect("/sktm");
@@ -97,6 +98,7 @@ class SktmController extends Controller
         $pekerjaan = $request->pekerjaan;
         $status_kawin = $request->status_kawin;
         $keterangan = $request->keterangan;
+        $nohp = $request->nohp;
 
         sktm::where('id', $id)->update([
 
@@ -110,7 +112,8 @@ class SktmController extends Controller
             'alamat'=>$alamat,
             'pekerjaan'=>$pekerjaan,
             'status_kawin'=>$status_kawin,
-            'keterangan'=>$keterangan
+            'keterangan'=>$keterangan,
+            'nohp'=>$nohp
         ]);
 
         return redirect('/sktm');

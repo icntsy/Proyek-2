@@ -25,6 +25,7 @@ class CreateSktmTable extends Migration
             $table->string('status_perkawinan');
             $table->string('pekerjaan');
             $table->string('alamat');
+            $table->string('nohp');
             $table->timestamps();
         });
     }

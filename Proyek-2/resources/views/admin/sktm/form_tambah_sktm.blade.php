@@ -66,7 +66,6 @@
                             </a>
                         </li>
 
-
                         <li class="nav-item">
                             <a class="nav-link" href="/akun">
                                 <i class="ni ni-circle-08 text-pink"></i>
@@ -264,10 +263,17 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                <div class="form-group">
+                                        <label class="form-control-label" for="input-last-name">Nohp</label>
+                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-
-                                    <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br>
+                                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan">
+                                    </div>
+                                </div>
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>

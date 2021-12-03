@@ -66,19 +66,26 @@
                       </div>
                         </div>
                         <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-last-name">Nohp</label>
+                            <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp" value="{{$skd->nohp}}">
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Keterangan</label>
                         <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$skd->keterangan}}">
                       </div>
-                        </div>
-                            <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
-                        </div>
-                      </div>
+                      <div class="submit-btn-area">
+                          <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                     </div>
+                    </div>
+                            </div>
+                        </div>
+                </div>
                   </div>
                 </div>
                 <hr class="my-4" />
             </div>
           </div>
-
 @endsection

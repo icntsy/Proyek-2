@@ -60,7 +60,8 @@ class SkdController extends Controller
             'agama'=>$request->agama,
             'pekerjaan'=>$request->pekerjaan,
             'alamat'=>$request->alamat,
-            'keterangan'=>$request->keterangan
+            'keterangan'=>$request->keterangan,
+            'nohp'=>$request->nohp
 
             ]);
             return redirect("/skd");
@@ -93,6 +94,7 @@ class SkdController extends Controller
         $alamat = $request->alamat;
         $pekerjaan = $request->pekerjaan;
         $keterangan = $request->keterangan;
+        $nohp = $request->nohp;
 
         skd::where('id', $id)->update([
 
@@ -103,7 +105,8 @@ class SkdController extends Controller
             'agama'=>$agama,
             'pekerjaan'=>$pekerjaan,
             'alamat'=>$alamat,
-            'keterangan'=>$keterangan
+            'keterangan'=>$keterangan,
+            'nohp'=>$nohp
         ]);
 
         return redirect('/skd');

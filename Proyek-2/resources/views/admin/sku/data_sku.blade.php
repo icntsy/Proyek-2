@@ -28,11 +28,11 @@
         <h3 class="mb-0">
           @if(auth()->user()->role == 1)
 
-          Surat Keterangan Usaha
+          Hello
 
           @else
 
-          Hallo Gaes
+          Surat Keterangan Usaha
 
           @endif
         </h3>
@@ -49,7 +49,8 @@
               <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
               <th scope="col" class="sort" data-sort="status">Agama</th>
               <th scope="col" class="sort" data-sort="budget">Pekerjaan</th>
-              <th scope="col" class="sort" data-sort="budget">Alamat</th>
+              <th scope="col" class="sort" data-sort="budget">Keterangan</th>
+              <th scope="col" class="sort" data-sort="budget">Nohp</th>
               <th scope="col">Aksi</th>
               <th scope="col"></th>
             </tr>
@@ -66,7 +67,8 @@
               <td>{{ $sku->jenis_kelamin }}</td>
               <td>{{ $sku->agama }}</td>
               <td>{{ $sku->pekerjaan }}</td>
-              <td>{{ $sku->alamat }}</td>
+              <td>{{ $sku->keterangan }}</td>
+              <td>{{ $sku->nohp }}</td>
               <td>
                 <a href="/sku/edit/{{$sku->id}}" class="btn btn-warning btn-sm">
                   <i class="fas fa-edit"></i>
@@ -77,6 +79,9 @@
                 <a onclick="return confirm('Ingin Menghapus Data SKU Ini ?')" href="/sku/{{ $sku->id }}/hapus" class="btn btn-warning btn-sm">
                   <i class="fas fa-trash"></i>
                 </a>
+                <a href="https://api.whatsapp.com/send?phone={{ $sku->nohp }}&text=Halo%20{{ $sku->nama }}%20Surat Keterangan Usaha untuk Anda telah selesai dibuat. %0AMohon segera diambil di Balai Desa Dermayu%0ATerimakasih..." class="btn btn-danger btn-sm">
+                <i class="fab fa-whatsapp"></i>
+                  </a>
               </td>
             </tr>
             @endforeach

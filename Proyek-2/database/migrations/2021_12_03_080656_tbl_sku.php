@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTblSkuTable extends Migration
+class TblSku extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,17 @@ class CreateTblSkuTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_sku', function (Blueprint $table) {
+        Schema::create('tabel_sku', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
             $table->string('tempat_lahir');
-            $table->integer('tanggal_lahir');
+            $table->date('tanggal_lahir');
+            $table->string('jenis_kelamin');
             $table->string('agama');
             $table->string('pekerjaan');
             $table->string('alamat');
+            $table->string('nohp');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }
@@ -32,7 +35,6 @@ class CreateTblSkuTable extends Migration
      */
     public function down()
     {
-
-        Schema::dropIfExists('tbl_sku');
+        Schema::dropIfExists('tabel_sku');
     }
 }

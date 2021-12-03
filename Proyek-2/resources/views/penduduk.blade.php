@@ -29,11 +29,11 @@
 
           @if(auth()->user()->role == 1)
 
-          Data Kependudukan
-
+    Hello
           @else
 
-          Hallo Gaes
+          Data Kependudukan
+
 
           @endif
         </h3>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\sku;
 
 class FormulirskuController extends Controller
 {
@@ -21,9 +22,21 @@ class FormulirskuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function formulir(Request $request)
+
     {
-        //
+        sku::create([
+            'nama' =>$request->nama,
+            'tempat_lahir'=>$request->tempat_lahir,
+            'tanggal_lahir'=>$request->tanggal_lahir,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'agama'=>$request->agama,
+            'pekerjaan'=>$request->pekerjaan,
+            'alamat'=>$request->alamat,
+            'keterangan'=>$request->keterangan,
+            'nohp'=>$request->nohp,
+            ]);
+
     }
 
     /**

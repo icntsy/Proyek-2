@@ -28,11 +28,11 @@
         <h3 class="mb-0">
           @if(auth()->user()->role == 1)
 
-          Surat Keterangan Domisili
+          Helo
 
           @else
 
-          Hallo Gaes
+           Surat Keterangan Domisili
 
           @endif
         </h3>
@@ -48,9 +48,11 @@
               <th scope="col" class="sort" data-sort="budget">Tanggal Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
               <th scope="col" class="sort" data-sort="status">Agama</th>
+              <th scope="col" class="sort" data-sort="status">Nohp</th>
               <th scope="col" class="sort" data-sort="budget">Keterangan</th>
+
               <th scope="col">Aksi</th>
-              <th scope="col"></th>
+              <!-- <th scope="col"></th> -->
             </tr>
           </thead>
           <tbody class="list">
@@ -63,18 +65,20 @@
               <td>{{ $skd->tanggal_lahir }}</td>
               <td>{{ $skd->jenis_kelamin }}</td>
               <td>{{ $skd->agama }}</td>
+              <td>{{ $skd->nohp }}</td>
               <td>{{ $skd->keterangan }}</td>
               <td>
                 <a href="/skd/edit/{{$skd->id}}" class="btn btn-warning btn-sm">
                   <i class="fas fa-edit"></i>
                 </a>
-
                 <a href="http://127.0.0.1:8080/jasperserver/rest_v2/reports/reports/skd.pdf?id={{$skd->id}}" class="btn btn-danger btn-sm" target="_blank">
                   <i class="fas fa-print"></i>
                 </a>
                 <a onclick="return confirm('Ingin Menghapus Data SKD Ini ?')" href="/skd/{{ $skd->id }}/hapus" class="btn btn-warning btn-sm">
                   <i class="fas fa-trash"></i>
                 </a>
+                <a href="https://api.whatsapp.com/send?phone={{ $skd->nohp }}&text=Halo%20{{ $skd->nama }} Surat Keterangan Domisili untuk Anda telah selesai dibuat. %0AMohon segera diambil di Balai Desa Dermayu%0ATerimakasih..." class="btn btn-danger btn-sm">
+                <i class="fab fa-whatsapp"></i>
               </td>
             </tr>
             @endforeach

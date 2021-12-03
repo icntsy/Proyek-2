@@ -30,11 +30,11 @@
 
           @if(auth()->user()->role == 1)
 
-          Surat Keterangan Tidak Mampu
+          Hello
 
           @else
 
-          Hallo Gaes
+          Surat Keterangan Tidak Mampu
 
           @endif
         </h3>
@@ -53,7 +53,8 @@
               <!-- <th scope="col" class="sort" data-sort="budget">Kewarganegaraan</th> -->
               <th scope="col" class="sort" data-sort="budget">Agama</th>
               <!-- <th scope="col" class="sort" data-sort="budget">Alamat</th> -->
-              <th scope="col" class="sort" data-sort="budget">Pekerjaan</th>
+              <!-- <th scope="col" class="sort" data-sort="budget">Pekerjaan</th> -->
+              <th scope="col" class="sort" data-sort="budget">Nohp</th>
               <!-- <th scope="col" class="sort" data-sort="budget">Status Kawin</th> -->
               <th scope="col">Aksi</th>
               <th scope="col"></th>
@@ -73,7 +74,8 @@
               <!-- <td>{{ $sktm->kewarganegaraan }}</td> -->
               <td>{{ $sktm->agama }}</td>
               <!-- <td>{{ $sktm->alamat }}</td> -->
-              <td>{{ $sktm->pekerjaan }}</td>
+              <!-- <td>{{ $sktm->pekerjaan }}</td> -->
+              <td>{{ $sktm->nohp}}</td>
               <!-- <td>{{ $sktm->status_kawin }}</td> -->
               <td>
                 <a href="/sktm/edit/{{$sktm->id}}" class="btn btn-warning btn-sm">
@@ -85,6 +87,8 @@
                 <a onclick="return confirm('Ingin Menghapus Data SKTM Ini ?')" href="/sktm/{{ $sktm->id }}/hapus" class="btn btn-warning btn-sm">
                 <i class="fas fa-trash"></i>
                 </a>
+                <a href="https://api.whatsapp.com/send?phone={{ $sktm->nohp }}&text=Halo%20{{ $sktm->nama }}%20Surat Keterangan Tidak Mampu untuk Anda telah selesai dibuat. %0AMohon segera diambil di Balai Desa Dermayu%0ATerimakasih..." class="btn btn-danger btn-sm">
+                <i class="fab fa-whatsapp"></i>
               </td>
             </tr>
             @endforeach

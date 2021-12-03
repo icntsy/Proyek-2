@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Models\skd;
 
 class FormulirskdController extends Controller
 {
@@ -21,19 +23,20 @@ class FormulirskdController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function formulir(Request $request)
-    // {
-    //     FormulirskdController::create ([
-    //         'nama' =>$request->nama,
-    //         'tempat_lahir'=>$request->tempat_lahir,
-    //         'tanggal_lahir'=>$request->tanggal_lahir,
-    //         'jenis_kelamin'=>$request->jenis_kelamin,
-    //         'agama'=>$request->agama,
-    //         'pekerjaan'=>$request->pekerjaan,
-    //         'alamat'=>$request->alamat,
-    //         'keterangan'=>$request->keterangan
-    //         ]);
-    // }
+    public function formulir(Request $request)
+    {
+        skd::create ([
+            'nama' =>$request->nama,
+            'tempat_lahir'=>$request->tempat_lahir,
+            'tanggal_lahir'=>$request->tanggal_lahir,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'agama'=>$request->agama,
+            'pekerjaan'=>$request->pekerjaan,
+            'alamat'=>$request->alamat,
+            'keterangan'=>$request->keterangan,
+            'nohp'=>$request->nohp
+            ]);
+    }
 
     /**
      * Store a newly created resource in storage.

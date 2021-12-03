@@ -83,7 +83,7 @@
                     <div class="col-lg-4 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi bi-envelope-open fs-1 text-primary"></i></i></div>
-                            <h3 class="h4 mb-2">Surat Keterangan usaha</h3>
+                            <h3 class="h4 mb-2">Surat Keterangan Usaha</h3>
                             <p class="text-muted mb-0">Surat Keterangan Usaha adalah dokumen administratif yang dikeluarkan pemerintahan
                                 melalui Kelurahan atau Kecamatan. Surat ini adalah pengakuan resmi dari pemerintah daerah bahwa benar,
                                 suatu ada dalam suatu daerah administratif tertentu.

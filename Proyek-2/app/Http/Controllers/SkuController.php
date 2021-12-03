@@ -50,8 +50,7 @@ class SkuController extends Controller
             'pekerjaan'=>$request->pekerjaan,
             'alamat'=>$request->alamat,
             'keterangan'=>$request->keterangan,
-
-
+            'nohp'=>$request->nohp
             ]);
             return redirect("/sku");
         }
@@ -83,6 +82,7 @@ class SkuController extends Controller
         $alamat = $request->alamat;
         $pekerjaan = $request->pekerjaan;
         $keterangan = $request->keterangan;
+        $nohp = $request->nohp;
 
         sku::where('id', $id)->update([
 
@@ -93,7 +93,8 @@ class SkuController extends Controller
             'agama'=>$agama,
             'alamat'=>$alamat,
             'pekerjaan'=>$pekerjaan,
-            'keterangan'=>$keterangan
+            'keterangan'=>$keterangan,
+            'nohp'=>$nohp
         ]);
 
         return redirect('/sku');
