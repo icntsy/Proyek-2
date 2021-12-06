@@ -24,7 +24,8 @@ class CreateTblSkdTable extends Migration
             $table->string('alamat');
             $table->string('keterangan');
             $table->string('nohp');
-            $table->timestamps();
+            $table->timestamp("created_at")->default(now());
+            $table->timestamp("updated_at")->default(now());
         });
     }
 

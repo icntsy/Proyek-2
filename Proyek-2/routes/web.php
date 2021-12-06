@@ -70,6 +70,7 @@ Route::post("tambah_skd", [SkdController::class, "proses_tambah_skd"]);
 // });
 Route::get("sktm/form_tambah_sktm", [SktmController::class, "form_tambah_sktm"]);
 Route::post("tambah_sktm", [SktmController::class, "proses_tambah_sktm"]);
+Route::post('/sktm/rekap', [SktmController::class, 'rekap']);
 
 Route::get("sku/form_tambah_sku", [SkuController::class, "form_tambah_sku"]);
 Route::post("tambah_sku", [SkuController::class, "proses_tambah_sku"]);
@@ -85,8 +86,11 @@ Route::post("tambah_penduduk", [PendudukController::class, "proses_tambah_pendud
 Route::get("/sktm", [SktmController::class, "index"]);
 // Route::get("/sktm", [Skttroller::class, "indmConex"]);
 Route::get("/skd/{id}/hapus", [SkdController::class, "destroy"]);
+Route::post('/skd/rekap', [SkdController::class, 'rekap']);
+
 Route::get("/sktm/{id}/hapus", [SktmController::class, "destroy"]);
 Route::get("/sku/{id}/hapus", [SkuController::class, "destroy"]);
+Route::post('/sku/rekap', [SkuController::class, 'rekap']);
 
 Route::get("/penduduk", [PendudukController::class, "index"]);
 Route::get("/penduduk/{id}/hapus", [PendudukController::class, "destroy"]);

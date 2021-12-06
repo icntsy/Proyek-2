@@ -15,7 +15,8 @@ class SkuController extends Controller
     public function index()
     {
         $data = [
-            "data_sku" => Sku::all()
+            //desc berdasarkan data yang masuk terakhir, esc berdasarkan abjad atau nomor urutan
+            "data_sku" => Sku::orderBy("id","DESC")->get()
         ];
 
         return view("/admin/sku/data_sku", $data);
@@ -41,6 +42,29 @@ class SkuController extends Controller
     {
         //untuk tanbah
         // dd($request);
+        $message = [
+            'nama.required' =>'Tidak Boleh Kosong',
+            'tempat_lahir.required'=>'Tidak Boleh Kosong',
+            'tanggal_lahir.required'=>'Tidak Boleh Kosong',
+            'jenis_kelamin.required'=>'Tidak Boleh Kosong',
+            'agama.required'=>'Tidak Boleh Kosong',
+            'pekerjaan.required'=>'Tidak Boleh Kosong',
+            'alamat.required'=>'Tidak Boleh Kosong',
+            'keterangan.required'=>'Tidak Boleh Kosong',
+            'nohp.required'=>'Tidak Boleh Kosong'
+        ];
+
+        $this->validate($request, [
+            'nama' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
+            'agama' => 'required',
+            'pekerjaan' => 'required',
+            'alamat' => 'required',
+            'keterangan' => 'required',
+            'nohp' => 'required',
+        ], $message);
         sku::create([
             'nama' =>$request->nama,
             'tempat_lahir'=>$request->tempat_lahir,
@@ -137,5 +161,14 @@ class SkuController extends Controller
 
         return view('/admin/sku/edit_sku',$data);
 
+    }
+
+    public function rekap(Request $request)
+    {
+        $rekap = sku::whereBetween('created_at', [$request->tglm, $request->tgls])->count();
+
+        return response()->json([
+            'jumlah' => $rekap
+        ]);
     }
 }

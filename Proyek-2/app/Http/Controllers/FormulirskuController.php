@@ -25,6 +25,29 @@ class FormulirskuController extends Controller
     public function formulir(Request $request)
 
     {
+        $message = [
+            'nama.required' =>'Tidak Boleh Kosong',
+            'tempat_lahir.required'=>'Tidak Boleh Kosong',
+            'tanggal_lahir.required'=>'Tidak Boleh Kosong',
+            'jenis_kelamin.required'=>'Tidak Boleh Kosong',
+            'agama.required'=>'Tidak Boleh Kosong',
+            'pekerjaan.required'=>'Tidak Boleh Kosong',
+            'alamat.required'=>'Tidak Boleh Kosong',
+            'keterangan.required'=>'Tidak Boleh Kosong',
+            'nohp.required'=>'Tidak Boleh Kosong'
+        ];
+
+        $this->validate($request, [
+            'nama' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
+            'agama' => 'required',
+            'pekerjaan' => 'required',
+            'alamat' => 'required',
+            'keterangan' => 'required',
+            'nohp' => 'required',
+        ], $message);
         sku::create([
             'nama' =>$request->nama,
             'tempat_lahir'=>$request->tempat_lahir,

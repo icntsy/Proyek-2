@@ -15,7 +15,7 @@ class SkdController extends Controller
     public function index()
     {
         $data = [
-            "data_skd" => Skd::all()
+            "data_skd" => Skd::orderBy("id","DESC")->get()
         ];
 
         return view("/admin/skd/data_skd", $data);
@@ -52,6 +52,29 @@ class SkdController extends Controller
     {
         //untuk tanbah
         // dd($request);
+        $message = [
+            'nama.required' =>'Tidak Boleh Kosong',
+            'tempat_lahir.required'=>'Tidak Boleh Kosong',
+            'tanggal_lahir.required'=>'Tidak Boleh Kosong',
+            'jenis_kelamin.required'=>'Tidak Boleh Kosong',
+            'agama.required'=>'Tidak Boleh Kosong',
+            'pekerjaan.required'=>'Tidak Boleh Kosong',
+            'alamat.required'=>'Tidak Boleh Kosong',
+            'keterangan.required'=>'Tidak Boleh Kosong',
+            'nohp.required'=>'Tidak Boleh Kosong'
+        ];
+
+        $this->validate($request, [
+            'nama' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
+            'agama' => 'required',
+            'pekerjaan' => 'required',
+            'alamat' => 'required',
+            'keterangan' => 'required',
+            'nohp' => 'required',
+        ], $message);
         skd::create([
             'nama' =>$request->nama,
             'tempat_lahir'=>$request->tempat_lahir,
@@ -140,6 +163,14 @@ class SkdController extends Controller
     {
         return view("admin/skd/form_tambah_skd");
 
+    }
+    public function rekap(Request $request)
+    {
+        $rekap = skd::whereBetween('created_at', [$request->tglm, $request->tgls])->count();
+
+        return response()->json([
+            'jumlah' => $rekap
+        ]);
     }
 }
 

@@ -205,18 +205,33 @@
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-name">Nama Lengkap</label>
                                         <input type="text" name="nama" id="name" class="form-control" placeholder="name">
+                                        <div class="text-danger">
+                            @error('nama')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="nik">NIK</label>
                                         <input type="teks" name="nik" id="nik" class="form-control" placeholder="NIK">
+                                        <div class="text-danger">
+                            @error('nik')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
                                         <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
+                                        <div class="text-danger">
+                            @error('jenis_kelamin')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
                                 </div>
                                 <!-- <div class="col-lg-6">
@@ -238,12 +253,22 @@
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>
                                         <input type="text" name="kewarganegaraan" id="input-last-name" class="form-control" placeholder="Kewarganegaraan">
+                                        <div class="text-danger">
+                            @error('kewarganegaraan')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Agama</label>
                                         <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama">
+                                        <div class="text-danger">
+                            @error('agama')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
                                 </div>
                                 <!-- <div class="col-lg-6">
@@ -256,7 +281,13 @@
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Alamat</label>
                                         <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
+                                        <div class="text-danger">
+                            @error('alamat')
+                            {{$message}}
+                            @enderror
+                            </div>
                                     </div>
+
                                 </div>
                                 <!-- <div class="col-lg-6">
                                     <div class="form-group">

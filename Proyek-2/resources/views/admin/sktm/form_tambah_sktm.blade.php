@@ -204,24 +204,44 @@
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-name">Nama Lengkap</label>
                                         <input type="text" name="nama" id="name" class="form-control" placeholder="name">
+                                        <div class="text-danger">
+                                    @error('nama')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="nik">NIK</label>
                                         <input type="teks" name="nik" id="nik" class="form-control" placeholder="NIK">
+                                        <div class="text-danger">
+                                    @error('nik')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="tempat_lahir">Tempat Lahir</label>
                         <input type="teks" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir">
+                        <div class="text-danger">
+                                    @error('tempat_lahir')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                       </div>
                     </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
                                         <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
+                                        <div class="text-danger">
+                                    @error('jenis_kelamin')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -230,50 +250,99 @@
                                     <div class="form-group">
                                         <label class="form-control-label" for="tanggal_lahir">Tanggal Lahir</label>
                                         <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir">
+                                        <div class="text-danger">
+                                    @error('tanggal_lahir')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>
                                         <input type="text" name="kewarganegaraan" id="input-last-name" class="form-control" placeholder="Kewarganegaraan">
+                                        <div class="text-danger">
+                                    @error('keterangan')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Agama</label>
                                         <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama">
+                                        <div class="text-danger">
+                                    @error('agama')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Pekerjaan</label>
                                         <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan">
+                                        <div class="text-danger">
+                                    @error('pekerjaan')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Alamat</label>
                                         <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
+                                        <div class="text-danger">
+                                    @error('alamat')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Status Kawin</label>
                                         <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin">
+                                        <div class="text-danger">
+                                    @error('status_kawin')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                 <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Nohp</label>
                                         <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp">
+                                        <div class="text-danger">
+                                    @error('nohp')
+                                    {{$message}}
+                                    @enderror
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
                                         <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan">
+                                        <div class="text-danger">
+                                    @error('keterangan')
+                                    {{$message}}
+                                    @enderror
                                     </div>
-                                </div>
+                                    </div>
+                                    <!-- <div class="form-group">
+                        <label class="form-control-label" for="input-last-name">Upload Foto KTP</label>
+                          <input type="file" class="form-control" id="nama" name="alamat"  placeholder="Upload Foto KTP"> -->
+                          <!-- <div class="text-danger">
+                            @error('alamat')
+                            {{$message}}
+                            @enderror
+                            </div> -->
+                        <!-- </div> -->
+                                <!-- </div> -->
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>

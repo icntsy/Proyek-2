@@ -27,7 +27,8 @@ class CreateTblSktmTable extends Migration
             $table->string('status_kawin');
             $table->string('keterangan');
             $table->string('nohp');
-            $table->timestamps();
+            $table->timestamp("created_at")->default(now());
+            $table->timestamp("updated_at")->default(now());
         });
     }
 

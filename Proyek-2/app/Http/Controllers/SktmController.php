@@ -15,7 +15,7 @@ class SktmController extends Controller
     public function index()
     {
         $data = [
-            "data_sktm" => sktm::all()
+            "data_sktm" => sktm::orderBy("id","DESC")->get()
         ];
 
         return view("/admin/sktm/data_sktm", $data);
@@ -50,6 +50,35 @@ class SktmController extends Controller
     {
         //untuk tanbah
         // dd($request);
+        $message = [
+            'nama.required' =>'Tidak Boleh Kosong',
+            'nik.required' =>'Tidak Boleh Kosong',
+            'tempat_lahir.required'=>'Tidak Boleh Kosong',
+            'tanggal_lahir.required'=>'Tidak Boleh Kosong',
+            'jenis_kelamin.required'=>'Tidak Boleh Kosong',
+            'kewarganegaraan.required'=>'Tidak Boleh Kosong',
+            'agama.required'=>'Tidak Boleh Kosong',
+            'alamat.required'=>'Tidak Boleh Kosong',
+            'pekerjaan.required'=>'Tidak Boleh Kosong',
+            'status_kawin.required'=>'Tidak Boleh Kosong',
+            'keterangan.required'=>'Tidak Boleh Kosong',
+            'nohp.required'=>'Tidak Boleh Kosong'
+        ];
+
+        $this->validate($request, [
+            'nama' => 'required',
+            'nik' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
+            'kewarganegaraan' => 'required',
+            'agama' => 'required',
+            'alamat' => 'required',
+            'pekerjaan' => 'required',
+            'status_kawin' => 'required',
+            'keterangan' => 'required',
+            'nohp' => 'required',
+        ], $message);
         sktm::create([
             'nama' =>$request->nama,
             'nik' =>$request->nik,
@@ -147,5 +176,13 @@ class SktmController extends Controller
     {
         return view("admin/sktm/form_tambah_sktm");
 
+    }
+    public function rekap(Request $request)
+    {
+        $rekap = sktm::whereBetween('created_at', [$request->tglm, $request->tgls])->count();
+
+        return response()->json([
+            'jumlah' => $rekap
+        ]);
     }
 }

@@ -50,6 +50,25 @@ class PendudukController extends Controller
     {
         //untuk tanbah
         // dd($request);
+        $message = [
+            'nama.required' =>'Tidak Boleh Kosong',
+            'nik.required'=>'Tidak Boleh Kosong',
+            'jenis_kelamin.required'=>'Tidak Boleh Kosong',
+            'kewarganegaraan.required'=>'Tidak Boleh Kosong',
+            'agama.required'=>'Tidak Boleh Kosong',
+            'alamat.required'=>'Tidak Boleh Kosong',
+
+        ];
+
+        $this->validate($request, [
+            'nama' => 'required',
+            'nik' => 'required',
+            'jenis_kelamin' => 'required',
+            'kewarganegaraan' => 'required',
+            'agama' => 'required',
+            'alamat' => 'required',
+
+        ], $message);
         penduduk::create([
             'nama' =>$request->nama,
             'nik' =>$request->nik,
