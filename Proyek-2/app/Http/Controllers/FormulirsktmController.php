@@ -68,6 +68,7 @@ class FormulirsktmController extends Controller
             'nohp'=>$request->nohp
 
             ]);
+            return redirect()->route('formulir')->with('pesan','pengajuan surat telah diterima');
     }
 
     /**

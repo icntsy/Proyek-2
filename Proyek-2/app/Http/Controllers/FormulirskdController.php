@@ -61,6 +61,7 @@ class FormulirskdController extends Controller
             'keterangan'=>$request->keterangan,
             'nohp'=>$request->nohp
             ]);
+            return redirect()->route('formulir')->with('pesan','pengajuan surat telah diterima');
     }
 
     /**

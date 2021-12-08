@@ -18,6 +18,13 @@
               <div class="text-center">
                 <h1 class="text-light">SURAT KETERANGAN USAHA</h1>
             </div>
+            @if (session('pesan'))
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+         <strong>Pengajuan Surat Telah Diterima!</strong> Kami akan menghubungi anda.
+            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+             @endif
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
