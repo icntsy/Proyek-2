@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Formulir Surat Skd</title>
   </head>
@@ -111,7 +112,7 @@
                         <!-- <div class="col-sm-6 col-md-5 col-lg-6">
                         <label for="nama" >Upload Foto KTP</label>
                           <input type="file" class="form-control" id="nama" name="alamat"  placeholder="Upload Foto KTP">
-                          <!-- <div class="text-danger">
+                          <div class="text-danger">
                             @error('alamat')
                             {{$message}}
                             @enderror
@@ -151,5 +152,55 @@
       </div>
     </div>
     <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Rekap Surat Keterangan Usaha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <label>Tanggal Mulai</label>
+                                <input type="date" name="tglm" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <label>Tanggal Selesai</label>
+                                @csrf
+                                <input type="date" name="tgls" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <input type="button" id="cek" value="Cek" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Tgl Mulai</th>
+                            <th>Tgl Selesai</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div> -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+            </div>
+        </div>
+    </div>
+</div>
   </body>
 </html>
