@@ -233,8 +233,13 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                        <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
-                        <div class="text-danger">
+                        <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                         <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
+                            <option selected>Pilih Jenis Kelamin</option>
+                            <option value="P">Perempuan</option>
+                            <option value="L">Laki-laki</option>
+                            </select>
+                            <div class="text-danger">
                             @error('jenis_kelamin')
                             {{$message}}
                             @enderror
@@ -244,8 +249,16 @@
                         <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Agama</label>
-                        <input type="text" name="agama"  id="input-last-name" class="form-control" placeholder="Agama">
-                        <div class="text-danger">
+                        <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control">
+                        <option selected>Pilih Agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Konghucu">Konghucu</option>
+                        </select>
+                    <div class="text-danger">
                             @error('agama')
                             {{$message}}
                             @enderror
@@ -272,7 +285,6 @@
                             {{$message}}
                             @enderror
                             </div>
-
                       </div>
                       <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Nohp</label>
@@ -294,7 +306,6 @@
                             {{$message}}
                             @enderror
                             </div>
-
                          <br>
 
                         <div class="submit-btn-area">

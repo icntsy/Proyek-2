@@ -39,7 +39,11 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                                        <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin"  value="{{$sktm->jenis_kelamin}}">
+                                        <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control" value="{{$sktm->jenis_kelamin}}">
+                                            <option selected>Pilih Jenis Kelamin</option>
+                                            <option value="P">Perempuan</option>
+                                            <option value="L">Laki-laki</option>
+                                            </select>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +63,15 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Agama</label>
-                                        <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama"  value="{{$sktm->agama}}">
+                                        <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control" value="{{$sktm->agama}}">
+                                        <option selected>Pilih Agama</option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Kristen">Kristen</option>
+                                        <option value="Budha">Budha</option>
+                                        <option value="Katolik">Katolik</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Konghucu">Konghucu</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

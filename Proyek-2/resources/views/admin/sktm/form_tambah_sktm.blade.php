@@ -271,12 +271,20 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Agama</label>
-                                        <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama">
+                                        <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control">
+                                        <option selected>Pilih Agama</option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Kristen">Kristen</option>
+                                        <option value="Budha">Budha</option>
+                                        <option value="Katolik">Katolik</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Konghucu">Konghucu</option>
+                                        </select>
                                         <div class="text-danger">
-                                    @error('agama')
-                                    {{$message}}
-                                    @enderror
-                                    </div>
+                                            @error('agama')
+                                            {{$message}}
+                                            @enderror
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
