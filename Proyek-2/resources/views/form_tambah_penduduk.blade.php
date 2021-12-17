@@ -48,7 +48,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/sku">
-
                                 <i class="ni ni-email-83"></i>
                                 <span class="nav-link-text">Surat Masuk SKU</span>
                             </a>
@@ -65,7 +64,6 @@
                                 <span class="nav-link-text">Data Kependudukan</span>
                             </a>
                         </li>
-
 
                         <li class="nav-item">
                             <a class="nav-link" href="/akun">
@@ -120,10 +118,9 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <!-- <i class="ni ni-bell-55"></i> -->
                             </a>
-                            <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
 
+                            <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
                                 <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -151,7 +148,7 @@
                             </div>
                 </div>
         </nav>
-        <!-- Header -->
+
         <!-- Header -->
         <div class="header bg-primary pb-6">
             <div class="container-fluid">
@@ -163,24 +160,20 @@
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                     <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
                                     <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
-
                                 </ol>
                             </nav>
                         </div>
                         @yield("form_tambah")
                         <div class="col-lg-6 col-5 text-right">
-                            <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
-
                         </div>
                     </div>
-                    <!-- Card stats -->
 
+                    <!-- Card stats -->
                     @if(session("session"))
                     <div class="alert alert-success">
                         {{ session("session") }}
                     </div>
                     @endif
-
                 </div>
             </div>
         </div>
@@ -192,19 +185,18 @@
                         <div class="col-8">
                             <h3 class="mb-0">Tambah Data Penduduk</h3>
                         </div>
-
                     </div>
                 </div>
+
                 <div class="card-body">
                     <form action="/tambah_penduduk" method="post">
                         @csrf
-                        <!-- @method('put') -->
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-name">Nama Lengkap</label>
-                                        <input type="text" name="nama" id="name" class="form-control" placeholder="name">
+                                        <input type="text" name="nama" id="name" class="form-control" placeholder="Nama Lengkap">
                                         <div class="text-danger">
                             @error('nama')
                             {{$message}}
@@ -223,90 +215,67 @@
                             </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                                        <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
-                                        <div class="text-danger">
+                        <div class="col-lg-6 col-lg-5 col-lg-6">
+                            <label for="nama" class="form-label">Jenis Kelamin</label>
+                            <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
+                            <option selected>Pilih Jenis Kelamin</option>
+                            <option value="P">Perempuan</option>
+                            <option value="L">Laki-laki</option>
+                            </select>
+                            <div class="text-danger">
                             @error('jenis_kelamin')
                             {{$message}}
                             @enderror
                             </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="col-lg-6">
-                      <div class="form-group">
-                        <label class="form-control-label" for="tempat_lahir">Tempat Lahir</label>
-                        <input type="teks" name="tempat_lahir" id="tempat_lahir" class="form-control" placeholder="Tempat Lahir">
                       </div>
-                    </div>
 
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="tanggal_lahir">Tanggal Lahir</label>
-                                        <input type="date" name="tanggal_lahir" id="input-first-name" class="form-control" placeholder="Tanggal Lahir">
-                                    </div>
-                                </div> -->
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>
-                                        <input type="text" name="kewarganegaraan" id="input-last-name" class="form-control" placeholder="Kewarganegaraan">
-                                        <div class="text-danger">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>
+                            <input type="text" name="kewarganegaraan" id="input-last-name" class="form-control" placeholder="Kewarganegaraan">                                    <div class="text-danger">
                             @error('kewarganegaraan')
                             {{$message}}
                             @enderror
                             </div>
-                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Agama</label>
-                                        <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama">
-                                        <div class="text-danger">
-                            @error('agama')
-                            {{$message}}
-                            @enderror
-                            </div>
-                                    </div>
                                 </div>
-                                <!-- <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Pekerjaan</label>
-                                        <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan">
-                                    </div>
-                                </div> -->
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Alamat</label>
-                                        <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
-                                        <div class="text-danger">
-                            @error('alamat')
-                            {{$message}}
-                            @enderror
-                            </div>
-                                    </div>
 
-                                </div>
-                                <!-- <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Status Kawin</label>
+                        <div class="col-lg-6 col-lg-5 col-lg-6">
+                            <label for="nama" class="form-label">Agama</label>
+                            <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Agama</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Konghucu">Konghucu</option>
+                            </select>
+                            <div class="text-danger">
+                                    @error('agama')
+                                    {{$message}}
+                                    @enderror
                                     </div>
-                                    <input type="text" name="status_kawin" id="input-last-name" class="form-control" placeholder="status_kawin"> <br>
+                            </div>
 
-                                </div> -->
-                                <!-- <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label class="form-control-label" for="input-last-name">Keterangan</label>
-                                    </div> -->
-                                    <!-- <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> <br> -->
-                                    <div class="submit-btn-area">
-                                        <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
-                                    </div>
-                                <!-- </div> -->
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <label class="form-control-label" for="input-last-name">Alamat</label>
+                            <input type="text" name="alamat" id="input-last-name" class="form-control" placeholder="Alamat">
+                            <div class="text-danger">
+                                    @error('alamat')
+                                    {{$message}}
+                                    @enderror
+                            </div>
                             </div>
                         </div>
+
+                        <div class="submit-btn-area">
+                            <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                 <hr class="my-4" />
             </div>
@@ -334,9 +303,6 @@
                         <li class="nav-item">
                             <a href="" class="nav-link">Sisdayu</a>
                         </li>
-                        <!-- <li class="nav-item">
-                      <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                    </li> -->
                     </ul>
                 </div>
             </div>
@@ -356,5 +322,4 @@
     <!-- Argon JS -->
     <script src="/admin/assets/js/argon.js?v=1.2.0"></script>
 </body>
-
 </html>

@@ -26,16 +26,13 @@
       <!-- Card header -->
       <div class="card-header border-0">
         <h3 class="mb-0">
-
           @if(auth()->user()->role == 1)
+            Hello
 
-    Hello
           @else
-
           Data Kependudukan
-
-
           @endif
+
         </h3>
       </div>
       <!-- Light table -->

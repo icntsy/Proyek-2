@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\sku;
+use App\Models\penduduk;
 
 class FormulirskuController extends Controller
 {
@@ -15,6 +16,18 @@ class FormulirskuController extends Controller
     public function index()
     {
         return view("formulirsku");
+    }
+
+    public function namasku(Request $request)
+    {
+        $penduduk = penduduk::select('nama')->where('nama', 'like', '%'.$request->term.'%')->get();
+
+        $data = array();
+
+        foreach ($penduduk as $p){
+            $data[] = $p->nama;
+        }
+        return response()->json($data);
     }
 
     /**
@@ -48,19 +61,27 @@ class FormulirskuController extends Controller
             'keterangan' => 'required',
             'nohp' => 'required',
         ], $message);
-        sku::create([
-            'nama' =>$request->nama,
-            'tempat_lahir'=>$request->tempat_lahir,
-            'tanggal_lahir'=>$request->tanggal_lahir,
-            'jenis_kelamin'=>$request->jenis_kelamin,
-            'agama'=>$request->agama,
-            'pekerjaan'=>$request->pekerjaan,
-            'alamat'=>$request->alamat,
-            'keterangan'=>$request->keterangan,
-            'nohp'=>$request->nohp,
-            ]);
-            return redirect()->route('formulir')->with('pesan','pengajuan surat telah diterima');
 
+        $nama = $request->nama;
+
+        $penduduk = penduduk::where('nama', $nama)->first();
+
+        if ($penduduk) {
+            sku::create([
+                'nama' =>$request->nama,
+                'tempat_lahir'=>$request->tempat_lahir,
+                'tanggal_lahir'=>$request->tanggal_lahir,
+                'jenis_kelamin'=>$request->jenis_kelamin,
+                'agama'=>$request->agama,
+                'pekerjaan'=>$request->pekerjaan,
+                'alamat'=>$request->alamat,
+                'keterangan'=>$request->keterangan,
+                'nohp'=>$request->nohp,
+                ]);
+                return redirect('formulirsku')->with('pesan','pengajuan surat telah diterima');
+        } else {
+            return redirect('formulirsku')->with('pesan','pengajuan surat tidak dapat diterima');
+        }
     }
 
     /**

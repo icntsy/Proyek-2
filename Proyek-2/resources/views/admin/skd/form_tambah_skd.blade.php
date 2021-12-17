@@ -119,7 +119,6 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <!-- <i class="ni ni-bell-55"></i> -->
                     </a>
                     <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
 
@@ -162,13 +161,11 @@
                       <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                         <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
                         <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
-
                       </ol>
                     </nav>
                   </div>
                   @yield("form_tambah")
                   <div class="col-lg-6 col-5 text-right">
-                    <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
                   </div>
                 </div>
                 <!-- Card stats -->
@@ -192,7 +189,6 @@
             <div class="card-body">
               <form action="/tambah_skd" method="post" >
               @csrf
-              <!-- @method('put') -->
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-lg-6">
@@ -343,9 +339,6 @@
                     <li class="nav-item">
                       <a href="" class="nav-link" >Sisdayu</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                    </li> -->
                   </ul>
                 </div>
               </div>

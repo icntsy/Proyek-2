@@ -6,6 +6,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <title>Formulir Surat sku</title>
   </head>
   <body>
@@ -21,7 +25,7 @@
             @if (session('pesan'))
 
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-         <strong>Pengajuan Surat Telah Diterima!</strong> Kami akan menghubungi anda.
+         <strong>{{ session('pesan') }}</strong> Kami akan menghubungi anda.
             <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
              @endif
@@ -57,7 +61,6 @@
 
                     <div class="col-lg-6 col-lg-5 col-lg-6">
                       <label for="nama" class="form-label">Jenis Kelamin</label>
-                      <!-- <input type="text" class="form-control" id="nama" name="agama"  placeholder="Agama"> -->
                       <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
                       <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
                             <option selected>Pilih Jenis Kelamin</option>
@@ -74,9 +77,7 @@
                 <div class="row">
                 <div class="col-lg-6 col-lg-5 col-lg-6">
                       <label for="nama" class="form-label">Agama</label>
-                      <!-- <input type="text" class="form-control" id="nama" name="agama"  placeholder="Agama"> -->
                       <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
-                      <!-- <label for="nama" class="form-label">Pilih Agama</label> -->
                       <option selected>Pilih Agama</option>
                     <option value="Islam">Islam</option>
                     <option value="Kristen">Kristen</option>
@@ -128,20 +129,22 @@
                             @enderror
                             </div>
                       </div>
-                      <!-- <div class="col-sm-6 col-md-5 col-lg-6">
-                        <label for="nama" >Upload Foto KTP</label>
-                          <input type="file" class="form-control" id="nama" name="alamat"  placeholder="Upload Foto KTP"> -->
-                          <!-- <div class="text-danger">
-                            @error('alamat')
-                            {{$message}}
-                            @enderror
-                            </div> -->
-                        <!-- </div> -->
+
                   </div>
                   <div class="row ">
                     <div class="col d-flex justify-content-center m-3">
                         <button type="submit" class="btn btn-info " name="kirim">Kirim</button>
-
                     </div>
                   </div>
               </div>
+              <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+          <script>
+  $( function() {
+
+    $( "#nama" ).autocomplete({
+      source: 'namasku'
+    });
+  } );
+  </script>
+        </body>
+      </html>

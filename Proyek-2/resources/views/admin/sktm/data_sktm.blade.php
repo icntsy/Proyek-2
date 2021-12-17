@@ -54,12 +54,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               <th scope="col" class="sort" data-sort="status">Tempat Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Tanggal Lahir</th>
               <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
-              <!-- <th scope="col" class="sort" data-sort="budget">Kewarganegaraan</th> -->
               <th scope="col" class="sort" data-sort="budget">Agama</th>
-              <!-- <th scope="col" class="sort" data-sort="budget">Alamat</th> -->
-              <!-- <th scope="col" class="sort" data-sort="budget">Pekerjaan</th> -->
               <th scope="col" class="sort" data-sort="budget">Nohp</th>
-              <!-- <th scope="col" class="sort" data-sort="budget">Status Kawin</th> -->
               <th scope="col">Aksi</th>
               <th scope="col"></th>
             </tr>
@@ -75,12 +71,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               <td>{{ $sktm->tempat_lahir }}</td>
               <td>{{ $sktm->tanggal_lahir }}</td>
               <td>{{ $sktm->jenis_kelamin }}</td>
-              <!-- <td>{{ $sktm->kewarganegaraan }}</td> -->
               <td>{{ $sktm->agama }}</td>
-              <!-- <td>{{ $sktm->alamat }}</td> -->
-              <!-- <td>{{ $sktm->pekerjaan }}</td> -->
               <td>{{ $sktm->nohp}}</td>
-              <!-- <td>{{ $sktm->status_kawin }}</td> -->
               <td>
                 <a href="/sktm/edit/{{$sktm->id}}" class="btn btn-warning btn-sm">
                 <i class="fas fa-edit"></i>
@@ -147,7 +139,6 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
                             <th>Jumlah</th>
                         </tr>
                     </thead>
-
                     <tbody></tbody>
                 </table>
             </div>

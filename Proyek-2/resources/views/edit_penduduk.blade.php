@@ -15,7 +15,6 @@
             <div class="card-body">
                     <form action="/penduduk/update/{{$penduduk->id}}" method="post">
                         @csrf
-                        <!-- @method('put') -->
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -44,8 +43,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
 
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Kewarganegaraan</label>

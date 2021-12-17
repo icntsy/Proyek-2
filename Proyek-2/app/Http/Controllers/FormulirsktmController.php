@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\sktm;
+use App\Models\penduduk;
 
 class FormulirsktmController extends Controller
 {
@@ -15,6 +16,17 @@ class FormulirsktmController extends Controller
     public function index()
     {
         return view("formulirsktm");
+    }
+    public function namasktm(Request $request)
+    {
+        $penduduk = penduduk::select('nama')->where('nama', 'like', '%'.$request->term.'%')->get();
+
+        $data = array();
+
+        foreach ($penduduk as $p){
+            $data[] = $p->nama;
+        }
+        return response()->json($data);
     }
 
     /**
@@ -53,22 +65,33 @@ class FormulirsktmController extends Controller
             'keterangan' => 'required',
             'nohp' => 'required',
         ], $message);
-        sktm::create([
-            'nama' =>$request->nama,
-            'nik' =>$request->nik,
-            'tempat_lahir'=>$request->tempat_lahir,
-            'tanggal_lahir'=>$request->tanggal_lahir,
-            'jenis_kelamin'=>$request->jenis_kelamin,
-            'kewarganegaraan' =>$request->kewarganegaraan,
-            'agama'=>$request->agama,
-            'alamat'=>$request->alamat,
-            'pekerjaan'=>$request->pekerjaan,
-            'status_kawin'=>$request->status_kawin,
-            'keterangan'=>$request->keterangan,
-            'nohp'=>$request->nohp
 
-            ]);
-            return redirect()->route('formulir')->with('pesan','pengajuan surat telah diterima');
+
+        $nama = $request->nama;
+
+        $penduduk = penduduk::where('nama', $nama)->first();
+
+        if ($penduduk) {
+            sktm::create([
+                'nama' =>$request->nama,
+                'nik' =>$request->nik,
+                'tempat_lahir'=>$request->tempat_lahir,
+                'tanggal_lahir'=>$request->tanggal_lahir,
+                'jenis_kelamin'=>$request->jenis_kelamin,
+                'kewarganegaraan' =>$request->kewarganegaraan,
+                'agama'=>$request->agama,
+                'alamat'=>$request->alamat,
+                'pekerjaan'=>$request->pekerjaan,
+                'status_kawin'=>$request->status_kawin,
+                'keterangan'=>$request->keterangan,
+                'nohp'=>$request->nohp
+
+                ]);
+                return redirect('formulirsktm')->with('pesan','pengajuan surat telah diterima');
+        } else {
+            return redirect('formulirsktm')->with('pesan','pengajuan surat tidak dapat diterima');
+        }
+
     }
 
     /**

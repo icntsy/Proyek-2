@@ -58,7 +58,6 @@
                             pelayanan pengajuan surat di desa Dermayu. Dari berbagai layanan tersebut kami juga menyediakan
                             kotak layanan untuk warga desa kepada aparatur desa secara virtual. Dengan Sistem yang kami ciptakan
                             ini bertujuan untuk mempermudah proses administratif dan mempercepat pelayanan masyarakat di desa.</p>
-                        <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
                 </div>
             </div>

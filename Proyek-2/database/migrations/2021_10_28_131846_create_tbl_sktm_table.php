@@ -16,7 +16,7 @@ class CreateTblSktmTable extends Migration
         Schema::create('tbl_sktm', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->integer('nik');
+            $table->string('nik', 50);
             $table->string('tempat_lahir');
             $table->string('tanggal_lahir');
             $table->string('jenis_kelamin');

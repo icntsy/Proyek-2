@@ -15,7 +15,6 @@
             <div class="card-body">
                     <form action="/sktm/update/{{$sktm->id}}" method="post">
                         @csrf
-                        <!-- @method('put') -->
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col-lg-6">

@@ -66,7 +66,6 @@
                             </a>
                         </li>
 
-
                         <li class="nav-item">
                             <a class="nav-link" href="/akun">
                                 <i class="ni ni-circle-08 text-pink"></i>
@@ -120,10 +119,9 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <!-- <i class="ni ni-bell-55"></i> -->
                             </a>
-                            <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
 
+                            <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
                                 <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -168,11 +166,10 @@
                         </div>
                         @yield("form_tambah")
                         <div class="col-lg-6 col-5 text-right">
-                            <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
                         </div>
                     </div>
-                    <!-- Card stats -->
 
+                    <!-- Card stats -->
                     @if(session("session"))
                     <div class="alert alert-success">
                         {{ session("session") }}
@@ -194,7 +191,6 @@
                 <div class="card-body">
                     <form action="/tambah_sku" method="post">
                         @csrf
-                        <!-- @method('put') -->
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -222,7 +218,6 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                                        <!-- <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin"> -->
                                         <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
                                         <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
                                                 <option selected>Pilih Jenis Kelamin</option>
@@ -239,7 +234,6 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Agama</label>
-                                        <!-- <input type="text" name="agama" id="input-last-name" class="form-control" placeholder="Agama"> -->
                                         <select id="nama" name="agama"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
                                         <option selected>Pilih Agama</option>
                                         <option value="Islam">Islam</option>
@@ -313,15 +307,6 @@
                                     @enderror
                                     </div>
                                 </div>
-                                <!-- <div class="form-group">
-                        <label class="form-control-label" for="input-last-name">Upload Foto KTP</label>
-                          <input type="file" class="form-control" id="nama" name="alamat"  placeholder="Upload Foto KTP"> -->
-                          <!-- <div class="text-danger">
-                            @error('alamat')
-                            {{$message}}
-                            @enderror
-                            </div> -->
-                        <!-- </div> -->
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="submit-btn-area">

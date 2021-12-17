@@ -75,9 +75,6 @@
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit">Login <i class="ti-arrow-right"></i></button>
                         </div>
-                        <!-- <div class="form-footer text-center mt-5">
-                            <p class="text-muted">Belum Punya Akun? <a href="/register">Daftar</a></p>
-                        </div> -->
                     </div>
                 </form>
             </div>

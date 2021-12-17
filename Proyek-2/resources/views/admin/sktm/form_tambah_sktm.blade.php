@@ -119,7 +119,6 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <!-- <i class="ni ni-bell-55"></i> -->
                             </a>
                             <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
 
@@ -162,14 +161,11 @@
                                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                     <li class="breadcrumb-item"><a href="/dashboard"><i class="fas fa-home"></i></a></li>
                                     <li class="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
-
                                 </ol>
                             </nav>
                         </div>
                         @yield("form_tambah")
                         <div class="col-lg-6 col-5 text-right">
-                            <!-- <a href="#" class="btn btn-sm btn-neutral">Tambah Data</a> -->
-
                         </div>
                     </div>
                     <!-- Card stats -->
@@ -179,7 +175,6 @@
                         {{ session("session") }}
                     </div>
                     @endif
-
                 </div>
             </div>
         </div>
@@ -197,7 +192,6 @@
                 <div class="card-body">
                     <form action="/tambah_sktm" method="post">
                         @csrf
-                        <!-- @method('put') -->
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -341,16 +335,6 @@
                                     @enderror
                                     </div>
                                     </div>
-                                    <!-- <div class="form-group">
-                        <label class="form-control-label" for="input-last-name">Upload Foto KTP</label>
-                          <input type="file" class="form-control" id="nama" name="alamat"  placeholder="Upload Foto KTP"> -->
-                          <!-- <div class="text-danger">
-                            @error('alamat')
-                            {{$message}}
-                            @enderror
-                            </div> -->
-                        <!-- </div> -->
-                                <!-- </div> -->
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>
                                     </div>
@@ -384,9 +368,6 @@
                         <li class="nav-item">
                             <a href="" class="nav-link">Sisdayu</a>
                         </li>
-                        <!-- <li class="nav-item">
-                      <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                    </li> -->
                     </ul>
                 </div>
             </div>

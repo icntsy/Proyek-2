@@ -70,15 +70,6 @@
                         @csrf
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit">Submit <i class="ti-arrow-right"></i></button>
-                            <!-- <div class="login-other row mt-4">
-                                <div class="col-6">
-                                    <a class="fb-login" href="#">Sign up with <i class="fa fa-facebook"></i></a>
-                                </div>
-                                <div class="col-6"> -->
-                                    <!-- <a class="google-login" href="#">Sign up with <i class="fa fa-google"></i></a>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="form-footer text-center mt-5">
                             <p class="text-muted">Punya Akun? <a href="/login">Login</a></p>
                         </div>

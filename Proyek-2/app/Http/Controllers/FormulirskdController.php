@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\skd;
+// use App\Models\penduduk;
 
 class FormulirskdController extends Controller
 {
@@ -18,6 +19,19 @@ class FormulirskdController extends Controller
 
         return view("formulirskd");
     }
+
+    // public function namaskd(Request $request)
+    // {
+    //     $penduduk = penduduk::select('nama')->where('nama', 'like', '%'.$request->term.'%')->get();
+
+    //     $data = array();
+
+    //     foreach ($penduduk as $p){
+    //         $data[] = $p->nama;
+    //     }
+    //     return response()->json($data);
+    // }
+
 
     /**
      * Show the form for creating a new resource.
@@ -50,18 +64,27 @@ class FormulirskdController extends Controller
             'nohp' => 'required',
         ], $message);
 
-        skd::create ([
-            'nama' =>$request->nama,
-            'tempat_lahir'=>$request->tempat_lahir,
-            'tanggal_lahir'=>$request->tanggal_lahir,
-            'jenis_kelamin'=>$request->jenis_kelamin,
-            'agama'=>$request->agama,
-            'pekerjaan'=>$request->pekerjaan,
-            'alamat'=>$request->alamat,
-            'keterangan'=>$request->keterangan,
-            'nohp'=>$request->nohp
-            ]);
-            return redirect()->route('formulir')->with('pesan','pengajuan surat telah diterima');
+        // $nama = $request->nama;
+
+        // $penduduk = penduduk::where('nama', $nama)->first();
+
+        // if ($penduduk) {
+            skd::create ([
+                'nama' =>$request->nama,
+                'tempat_lahir'=>$request->tempat_lahir,
+                'tanggal_lahir'=>$request->tanggal_lahir,
+                'jenis_kelamin'=>$request->jenis_kelamin,
+                'agama'=>$request->agama,
+                'pekerjaan'=>$request->pekerjaan,
+                'alamat'=>$request->alamat,
+                'keterangan'=>$request->keterangan,
+                'nohp'=>$request->nohp
+                ]);
+                return redirect('formulirskd')->with('pesan','pengajuan surat telah diterima');
+        // } else {
+        //     return redirect('formulirskd')->with('pesan','pengajuan surat tidak dapat diterima');
+        // }
+
     }
 
     /**

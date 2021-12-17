@@ -17,8 +17,6 @@
 
               <form action="/skd/update/{{$skd->id}}" method="post" >
               @csrf
-
-              <!-- @method('put') -->
                 <div class="pl-lg-4">
                   <div class="row">
                     <div class="col-lg-6">
@@ -44,7 +42,6 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                        <!-- <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin" value="{{$skd->jenis_kelamin}}"> -->
                         <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control" value="{{$skd->jenis_kelamin}}">
                         <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
                             <option selected>Pilih Jenis Kelamin</option>
