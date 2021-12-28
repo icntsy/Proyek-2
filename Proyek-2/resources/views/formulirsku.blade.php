@@ -23,12 +23,12 @@
                 <h1 class="text-light">SURAT KETERANGAN USAHA</h1>
             </div>
             @if (session('pesan'))
-
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
          <strong>{{ session('pesan') }}</strong> Kami akan menghubungi anda.
             <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
              @endif
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
@@ -94,7 +94,20 @@
                       </div>
 
                     <div class="col-sm-6 col-md-5 col-lg-6"><label for="pekerjaan" class="form-label">Pekerjaan</label>
-                      <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan ">
+                      <!-- <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan "> -->
+                      <select id="nama" name="pekerjaan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Pekerjaan</option>
+                    <option value="IRT">Ibu Rumah Tangga</option>
+                    <option value="Pedagang">Pedagang</option>
+                    <option value="Wirausaha">Wirausaha</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="PNS">Pegawai Negeri Sipil</option>
+                    <option value="Guru">Guru</option>
+                    <option value="tidak bekerja">Tidak Bekerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                    </select>
                       <div class="text-danger">
                             @error('pekerjaan')
                             {{$message}}
@@ -103,8 +116,14 @@
                       </div>
 
                       <div class="col-sm-6 col-md-5 col-lg-6"><label for="keterangan" class="form-label">Keterangan</label>
-                      <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan ">
+                      <!-- <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="Keterangan "> -->
                       <div class="text-danger">
+                    <select id="nama" name="keterangan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Keterangan</option>
+                            <option value="Izin Buka Usaha">Izin Buka Usaha</option>
+                            <option value="Pembuat cabang">Pembuat Cabang</option>
+                            <option value="Lainnya">Lainnya</option>
+                    </select>
                             @error('keterangan')
                             {{$message}}
                             @enderror

@@ -83,7 +83,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
                 <a onclick="return confirm('Ingin Menghapus Data SKTM Ini ?')" href="/sktm/{{ $sktm->id }}/hapus" class="btn btn-warning btn-sm">
                 <i class="fas fa-trash"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone={{ $sktm->nohp }}&text=Halo%20{{ $sktm->nama }}%20Surat Keterangan Tidak Mampu untuk Anda telah selesai dibuat. %0AMohon segera diambil di Balai Desa Dermayu%0ATerimakasih..." class="btn btn-danger btn-sm">
+                <a href="https://api.whatsapp.com/send?phone={{ $sktm->nohp }}&text=Halo%20{{ $sktm->nama }}%20Surat Keterangan Tidak Mampu untuk Anda telah selesai dibuat. %0AMohon segera diambil di Balai Desa Dermayu, serta membawa identitas KTP atau KK.%0ATerimakasih..." class="btn btn-danger btn-sm">
                 <i class="fab fa-whatsapp"></i>
               </td>
             </tr>

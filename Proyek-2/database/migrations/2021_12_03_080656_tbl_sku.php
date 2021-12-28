@@ -24,7 +24,8 @@ class TblSku extends Migration
             $table->string('alamat');
             $table->string('nohp');
             $table->string('keterangan');
-            $table->timestamps();
+            $table->timestamp("created_at")->default(now());
+            $table->timestamp("updated_at")->default(now());
         });
     }
 

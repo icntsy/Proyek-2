@@ -76,7 +76,20 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Pekerjaan</label>
-                                        <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan"  value="{{$sktm->pekerjaan}}">
+                                        <!-- <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan"  value="{{$sktm->pekerjaan}}"> -->
+                                        <select id="nama" name="pekerjaan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Pekerjaan</option>
+                    <option value="IRT">Ibu Rumah Tangga</option>
+                    <option value="Pedagang">Pedagang</option>
+                    <option value="Wirausaha">Wirausaha</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="PNS">Pegawai Negeri Sipil</option>
+                    <option value="Guru">Guru</option>
+                    <option value="tidak bekerja">Tidak Bekerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                    </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -88,7 +101,12 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Status Kawin</label>
-                                        <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin"  value="{{$sktm->status_kawin}}">
+                                        <!-- <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin"  value="{{$sktm->status_kawin}}"> -->
+                                        <select id="status_kawin" name="status_kawin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                                <option selected>Pilih Status Kawin</option>
+                                <option value="Kawin">Kawin</option>
+                                <option value="Belum Kawin">Belum Kawin</option>
+                                </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -100,7 +118,14 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-                                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$sktm->keterangan}}">
+                                        <!-- <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="Keterangan" value="{{$sktm->keterangan}}"> -->
+                                        <select id="nama" name="keterangan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Keterangan</option>
+                            <option value="Pembuatan BPJS">Pembuatan BPJS</option>
+                            <option value="Keringan Biaya Rumah Sakit">Keringan Biaya Rumah Sakit</option>
+                            <option value="Beasiswa">Beasiswa</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
                                     </div>
                                     <div class="submit-btn-area">
                                         <button id="form_submit" type="submit">Simpan <i class="ti-arrow-right"></i></button>

@@ -193,7 +193,6 @@
                         <div class="col-8">
                         <h3 class="mb-0">Edit Profile</h3>
                         </div>
-
                     </div>
                     </div>
                     <div class="card-body">

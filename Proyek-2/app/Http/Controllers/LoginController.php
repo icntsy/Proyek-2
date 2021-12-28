@@ -24,7 +24,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             Session::put('email', $request->email);
 
-            return redirect()->intended("/template");
+            return redirect()->intended("/dashboard");
         }
 
         return redirect()->back()->with("session", "Gagal Login");

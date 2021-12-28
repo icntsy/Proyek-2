@@ -17,6 +17,10 @@
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="/admin/assets/css/argon.css?v=1.2.0" type="text/css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
 </head>
 
 <body>
@@ -227,15 +231,20 @@
                                     </div>
                       </div>
                     </div>
-                                <div class="col-lg-6">
+                    <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Jenis Kelamin</label>
-                                        <input type="text" name="jenis_kelamin" id="input-last-name" class="form-control" placeholder="Jenis Kelamin">
+                                        <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                                        <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
+                                                <option selected>Pilih Jenis Kelamin</option>
+                                                <option value="P">Perempuan</option>
+                                                <option value="L">Laki-laki</option>
+                                                </select>
                                         <div class="text-danger">
-                                    @error('jenis_kelamin')
-                                    {{$message}}
-                                    @enderror
-                                    </div>
+                                        @error('jenis_kelamin')
+                                        {{$message}}
+                                        @enderror
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +293,20 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Pekerjaan</label>
-                                        <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan">
+                                        <!-- <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan"> -->
+                                        <select id="nama" name="pekerjaan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Pekerjaan</option>
+                    <option value="IRT">Ibu Rumah Tangga</option>
+                    <option value="Pedagang">Pedagang</option>
+                    <option value="Wirausaha">Wirausaha</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="PNS">Pegawai Negeri Sipil</option>
+                    <option value="Guru">Guru</option>
+                    <option value="tidak bekerja">Tidak Bekerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                    </select>
                                         <div class="text-danger">
                                     @error('pekerjaan')
                                     {{$message}}
@@ -306,7 +328,12 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Status Kawin</label>
-                                        <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin">
+                                        <!-- <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin"> -->
+                                        <select id="status_kawin" name="status_kawin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Status Kawin</option>
+                    <option value="Kawin">Kawin</option>
+                    <option value="Belum Kawin">Belum Kawin</option>
+                    </select>
                                         <div class="text-danger">
                                     @error('status_kawin')
                                     {{$message}}
@@ -317,7 +344,7 @@
                                 <div class="col-lg-6">
                                 <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Nohp</label>
-                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp">
+                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="No Hp diisi dengan awalan 62">
                                         <div class="text-danger">
                                     @error('nohp')
                                     {{$message}}
@@ -328,7 +355,14 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-                                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan">
+                                        <!-- <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> -->
+                                        <select id="nama" name="keterangan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Keterangan</option>
+                            <option value="Pembuatan BPJS">Pembuatan BPJS</option>
+                            <option value="Keringan Biaya Rumah Sakit">Keringan Biaya Rumah Sakit</option>
+                            <option value="Beasiswa">Beasiswa</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
                                         <div class="text-danger">
                                     @error('keterangan')
                                     {{$message}}
@@ -386,6 +420,15 @@
     <script src="/admin/assets/vendor/chart.js/dist/Chart.extension.js"></script>
     <!-- Argon JS -->
     <script src="/admin/assets/js/argon.js?v=1.2.0"></script>
+
+    <!-- <script>
+  $( function() {
+
+    $( "#nama" ).autocomplete({
+      source: 'namasktm'
+    });
+  } );
+  </script> -->
 </body>
 
 </html>

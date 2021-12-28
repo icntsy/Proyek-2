@@ -24,7 +24,7 @@
               </div>
               @if (session('pesan'))
 
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
          <strong>{{ session('pesan') }}</strong> Kami akan menghubungi anda.
             <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
@@ -112,7 +112,7 @@
 
                       <div class="col-lg-6 col-lg-5 col-lg-6">
                       <label for="nama" class="form-label">Jenis Kelamin</label>
-                      <select id="nama" name="jenis_kelamin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <select id="nama" name="jenis_kelamin" class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control">
                       <label for="nama" class="form-label">Pilih Jenis Kelamin</label>
                             <option selected>Pilih Jenis Kelamin</option>
                             <option value="P">Perempuan</option>
@@ -126,8 +126,22 @@
                       </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-5 col-lg-6"><label for="pekerjaan" class="form-label">Pekerjaan</label>
-                      <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan">
+                    <div class="col-sm-6 col-md-5 col-lg-6">
+                    <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                      <!-- <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"> -->
+                      <select id="nama" name="pekerjaan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Pekerjaan</option>
+                    <option value="IRT">Ibu Rumah Tangga</option>
+                    <option value="Pedagang">Pedagang</option>
+                    <option value="Wirausaha">Wirausaha</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="PNS">Pegawai Negeri Sipil</option>
+                    <option value="Guru">Guru</option>
+                    <option value="tidak bekerja">Tidak Bekerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                    </select>
                       <div class="text-danger">
                             @error('pekerjaan')
                             {{$message}}
@@ -135,10 +149,15 @@
                             </div>
                       </div>
 
-                      <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                          <label for="status_kawin" class="form-label">Status Kawin</label>
-                      <input type="text" class="form-control" id="status_kawin" name="status_kawin" placeholder="status_kawin">
-                      <div class="text-danger">
+                        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                        <label for="status_kawin" class="form-label">Status Kawin</label>
+                        <!-- <input type="text" class="form-control" id="status_kawin" name="status_kawin" placeholder="status_kawin"> -->
+                        <select id="status_kawin" name="status_kawin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Status Kawin</option>
+                    <option value="Kawin">Kawin</option>
+                    <option value="Belum Kawin">Belum Kawin</option>
+                    </select>
+                        <div class="text-danger">
                             @error('status_kawin')
                             {{$message}}
                             @enderror
@@ -147,8 +166,15 @@
 
                       <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
                       <label for="nama" class="form-label">Keterangan</label>
-                          <input type="text" class="form-control" id="nama" name="keterangan"  placeholder="Keterangan">
+                          <!-- <input type="text" class="form-control" id="nama" name="keterangan"  placeholder="Keterangan"> -->
                           <div class="text-danger">
+                        <select id="nama" name="keterangan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Keterangan</option>
+                            <option value="Pembuatan BPJS">Pembuatan BPJS</option>
+                            <option value="Keringan Biaya Rumah Sakit">Keringan Biaya Rumah Sakit</option>
+                            <option value="Beasiswa">Beasiswa</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
                             @error('keterangan')
                             {{$message}}
                             @enderror
@@ -180,6 +206,7 @@
       source: 'namasktm'
     });
   } );
+
   </script>
         </body>
       </html>

@@ -264,7 +264,20 @@
                         <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Pekerjaan</label>
-                        <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan">
+                        <!-- <input type="texr" name="pekerjaan" id="input-last-name" class="form-control" placeholder="Pekerjaan"> -->
+                        <select id="nama" name="pekerjaan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                      <option selected>Pilih Pekerjaan</option>
+                    <option value="IRT">Ibu Rumah Tangga</option>
+                    <option value="Pedagang">Pedagang</option>
+                    <option value="Wirausaha">Wirausaha</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="PNS">Pegawai Negeri Sipil</option>
+                    <option value="Guru">Guru</option>
+                    <option value="tidak bekerja">Tidak Bekerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                    </select>
                         <div class="text-danger">
                             @error('pekerjaan')
                             {{$message}}
@@ -284,7 +297,7 @@
                       </div>
                       <div class="form-group">
                                         <label class="form-control-label" for="input-last-name">Nohp</label>
-                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="nohp">
+                                        <input type="text" name="nohp" id="input-last-name" class="form-control" placeholder="No Hp diisi dengan awalan 62">
                                         <div class="text-danger">
                             @error('nohp')
                             {{$message}}
@@ -296,8 +309,16 @@
                         <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">Keterangan</label>
-                        <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan">
+                        <!-- <input type="text" name="keterangan" id="input-last-name" class="form-control" placeholder="keterangan"> -->
                         <div class="text-danger">
+                        <select id="nama" name="keterangan"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
+                            <option selected>Pilih Keterangan</option>
+                            <option value="Pindah Rumah">Pindah Rumah</option>
+                            <option value="Pindah Sekolah">Pindah Sekolah</option>
+                            <option value="Beasiswa">Beasiswa</option>
+                            <option value="Pembuatan Rekening">Pembuatan Rekening</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
                             @error('keterangan')
                             {{$message}}
                             @enderror

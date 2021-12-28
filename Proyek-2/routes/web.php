@@ -122,6 +122,7 @@ Route::post('/sktm/update/{id}', [SktmController::class, "edit"]);
 Route::get("/formulirsktm", [FormulirsktmController::class, "index"])->name('formulir');
 Route::post("formulir_sktm", [FormulirsktmController::class, "formulir"]);
 Route::get("namasktm",   [FormulirsktmController::class, "namasktm"]);
+// Route::get("namasktm",   [SktmController::class, "namasktm"]);
 
 Route::get('/sku/edit/{id}', [SkuController::class, "tampilan"]);
 Route::post('/sku/update/{id}', [SkuController::class, "edit"]);
