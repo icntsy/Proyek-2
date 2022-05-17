@@ -330,10 +330,10 @@
                                         <label class="form-control-label" for="input-last-name">Status Kawin</label>
                                         <!-- <input type="texr" name="status_kawin" id="input-last-name" class="form-control" placeholder="Status Kawin"> -->
                                         <select id="status_kawin" name="status_kawin"  class="col-lg-12 col-lg-3 offset-xs-1 col-lg-6 form-control  ">
-                      <option selected>Pilih Status Kawin</option>
-                    <option value="Kawin">Kawin</option>
-                    <option value="Belum Kawin">Belum Kawin</option>
-                    </select>
+                                <option selected>Pilih Status Kawin</option>
+                                <option value="Kawin">Kawin</option>
+                                <option value="Belum Kawin">Belum Kawin</option>
+                                </select>
                                         <div class="text-danger">
                                     @error('status_kawin')
                                     {{$message}}
